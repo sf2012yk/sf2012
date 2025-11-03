@@ -1,0 +1,202 @@
+/* ライトボックスで使う文字のclass/*
+/* 共通 */  
+.title{
+font-weight: bold;
+font-size: 1.3em;
+color: #F0F0F0;
+}
+.text{
+font-size: 1.1em;
+color: #F0F0F0;
+}
+a{
+font-weight: bold;
+font-size: 1.2em;
+color: #000000;
+text-decoration: none;
+}
+.map-marker a{
+font-size: 0.85em;
+color: #000000;
+text-decoration: none;
+}
+.map-marker.capital >a{
+font-size: 1em;
+color: #a11b1b;
+text-decoration: none;
+}
+/* h1、h2、h3のスタイル（h1） */
+/* 共通 */
+
+.editorcss h2::before{
+position: absolute;
+top: 0;
+left: 0;
+background: linear-gradient(#012169, #C8102E);
+}
+.editorcss h3{
+margin-bottom: 20px;
+max-width: 90%;
+font-family: Austin News, georgia, times, serif;
+font-size: 1.3em;
+}
+.editorcss h5{
+font-size: 1.5em;
+margin-bottom: 1em;
+position: relative;
+line-height: 1.8;
+padding-left: 15px;
+font-family: Austin News,georgia,times,serif;
+}
+
+.caption{
+overflow: hidden;
+font-weight: bold;
+padding: 10px;
+background-color: #fff;
+}
+.caption.white{
+margin-top: -1px;
+border: 2px solid #ddd;
+}
+.caption.white p{
+font: normal 14px/130% Arial, Helvetica, sans-serif;
+letter-spacing: 0.8px;
+color: #000;
+}
+.caption >.pin{
+font-family: "Font Awesome 5";
+font-weight: bold;
+font-size: 18px;
+color: #000;
+}
+.caption >.credit{
+font-family: "Font Awesome 5";
+font-size: 0.9em;
+}
+.pin > i{
+padding-right: 7px;
+}
+.credit > i{
+padding-right: 7px;
+}
+.map_pin::before{ 
+content: '\f276';
+}
+
+
+/* パソコンPC専用 */
+@media screen and (min-width: 1100px) {
+.Top_image .read_1{
+font-size: 4em;
+font-style: italic;
+color: #fff;
+font-family: Austin News,georgia,times,serif;
+width: 1500px;
+text-align: center;
+z-index: 1000;
+text-shadow: 0 3px 1px rgba(0, 0, 0, 0.9);
+}
+.Top_image .read_2{
+font-size: 2.5em;
+font-style: italic;
+color: #fff;
+font-family: Austin News,georgia,times,serif;
+width: 1500px;
+text-align: center;
+z-index: 1000;
+text-shadow: 0 3px 1px rgba(0, 0, 0, 0.9);
+}
+h1{
+font-size: 25px;
+font-weight: 600;
+font-family: Austin News,georgia,times,serif;
+}
+.common_main h2{
+font-size: 3em;
+margin-bottom: 1em;
+position: relative;
+line-height: 1.8;
+padding-left: 15px;
+font-family: Austin News,georgia,times,serif;
+}
+.editorcss h2{
+font-size: 2.5em;
+margin-bottom: 1em;
+position: relative;
+line-height: 1.8;
+padding-left: 15px;
+font-family: Austin News,georgia,times,serif;
+}
+.common_main h2::before{
+content: '';
+height: 100%;
+width: 6px;
+}
+.read_2{
+color: #000;
+font-size: 25px;
+text-align: center;
+margin-bottom: 3em;
+}
+}
+/* スマホSP専用（1）1099px以下 */
+@media screen and (max-width: 1099px) {
+.Top_image .read_1{
+font-size: 3.3em;
+font-style: italic;
+color: #fff;
+font-family: Austin News,georgia,times,serif;
+width: 1500px;
+text-align: center;
+z-index: 1000;
+text-shadow: 0 3px 1px rgba(0, 0, 0, 0.9);
+}
+.Top_image .read_2{
+font-size: 2em;
+font-style: italic;
+color: #fff;
+font-family: Austin News,georgia,times,serif;
+width: 1500px;
+text-align: center;
+z-index: 1000;
+text-shadow: 0 3px 1px rgba(0, 0, 0, 0.9);
+}
+h1{
+font-size: 25px;
+font-weight: 600;
+font-family: Austin News,georgia,times,serif;
+}
+.editorcss h2::before{
+content: '';
+height: 100%;
+width: 6px;
+}
+.editorcss h2{
+font-size: 1.5em;
+margin-bottom: 1em;
+position: relative;
+line-height: 1.8;
+padding-left: 15px;
+font-family: Austin News,georgia,times,serif;
+}
+.Read{
+font-size: 15px;
+padding-top: 1em;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.common_main h2{
+font-size: 2em;
+margin-bottom: 1em;
+position: relative;
+line-height: 1.8;
+padding-left: 15px;
+font-family: Austin News,georgia,times,serif;
+}
+.read_2{
+color: #000;
+font-size: 0.88em;
+text-align: center;
+margin-bottom: 3em;
+}
+}

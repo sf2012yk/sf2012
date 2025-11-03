@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/* 凡例はタブを開いて表示 */
+.street_map{
+margin: 0 auto 1em;
+position: relative;
+overflow: visible;
+width: 100%;
+height: 600px;
+}
+
+.LegendArea{
+position: absolute;
+width: 300px;
+background: rgba(255, 255, 255, 0.9);
+padding: 10px;
+box-shadow: 0 0 1px rgba(0,0,0,0.3);
+z-index: 499;
+bottom: 0;
+}
+a.popup_link  {
+text-decoration: none;
+color: #0077b6;
+font-weight: bold;
+font-family: Austin News,georgia,times,serif;
+margin-bottom: 0.3em;
+display: block;
+}
+/* パソコンPC専用 */
+@media screen and (min-width: 1100px) {
+.flex_images_2{
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* 3列に分割 */
+gap: 10px;
+}
+.flex_images_3{
+float: left;
+position: relative;
+width: 16%;
+margin-bottom: 30px;
+}
+.map_item_info{
+display: flex;
+flex-wrap: wrap;
+margin: 0 auto 3em;
+gap: 5px;
+}
+}
+.icon_area{
+margin-bottom: 5px;
+display: flex;
+width: 100%;
+margin-right: 10px;
+align-items: center;
+font-size: 1.2em;
+}
+.flex_images_2 h4 .ja{
+display: none;
+}
+.flex_images_2 h4:hover .en{
+display: none;
+text-decoration: none;
+}
+.flex_images_2 h4:hover .ja{
+display: inline;
+text-decoration: none;
+}
+.flex_images_3 a{
+font-weight: bold;
+font-size: 1.2em;
+color: #000000;
+text-decoration: none;
+}
+
+.flex_images_3 h4 .ja{
+display: none;
+}
+.flex_images_3 h4:hover .en{
+display: none;
+text-decoration: none;
+}
+.flex_images_3 h4:hover .ja{
+display: inline;
+text-decoration: none;
+}
+.Legend_icon{
+display: inline-block;
+width: 33px;
+height: 33px;
+margin-right: 8px;
+}
+.legend_content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.5s ease-in-out;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.legend_content.open {
+max-height: 500px;
+}
+.collapsible {
+display: block; /* 初期状態は非表示 */
+}
+
+#MapLegendSection {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+#MapLegendSection.open {
+  max-height: 200px; /* 凡例の最大高さに合わせて調整 */
+}
+
+
+/* スマホSP専用（1）1100px以下 */
+@media screen and (max-width: 1099px) {
+.flex_images_2{
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* 3列に分割 */
+gap: 10px;
+}
+.flex_images_3{
+float: left;
+position: relative;
+max-width: 47%;
+margin: 30px 10px 10px;
+}
+.map_item_info{
+width: 90%;
+margin: 0 auto 3em;
+display: flex;
+flex-wrap: wrap;
+}
+}
+
+
+
+
+

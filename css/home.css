@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* ▼▼▼独自CSS▼▼▼ */
+/* TOPのテキストキャプション（Top_caption） */
+
+
+/* 共通 */
+@media screen and (min-width: 1100px) {
+.caption_home{
+position: absolute;
+left: 0%;
+bottom: 35%;
+right: 0%;
+z-index: 10;
+padding-top: 20px;
+padding-bottom: 20px;
+color: #fff;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.3);
+z-index: 110;
+}
+.Baner_caption{
+width: 100%;
+position: absolute;
+bottom: 40%;
+z-index: 10;
+padding-top: 20px;
+padding-bottom: 20px;
+color: #fff;
+text-align: center;
+z-index: 110;
+background-color: rgba(0, 0, 0, 0.3);
+}
+.Baner_caption h1{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 500;
+color: #fff;
+font-size: 2.8em;
+line-height: 1.2;
+text-shadow: 0 2px 1px rgba(0,0,0,0.8);
+margin-bottom: 0;
+}
+}
+@media screen and (max-width: 1099px) {
+.caption_home{
+position: absolute;
+right: 0%;
+bottom: 35%;
+left: 0%;
+z-index: 10;
+padding-top: 20px;
+padding-bottom: 20px;
+color: #fff;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.3);
+z-index: 110;
+}
+.Baner_caption{
+position: absolute;
+right: 0%;
+bottom: 40%;
+left: 0%;
+z-index: 10;
+padding-top: 20px;
+padding-bottom: 20px;
+color: #fff;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.3);
+z-index: 110;
+}
+}
+
+#Best10{
+max-width: 100%;
+display: inline-block;
+overflow: hidden;
+}
+.Baner_image{
+width: 1000px;
+height: 450px;
+margin: 0 auto 3em;
+position: relative;
+overflow: hidden;
+}
+.Baner_image::before{
+position: absolute;
+content: "";
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(240, 240, 240, 0.1);
+z-index: 100;
+}
+.map_image{
+position: absolute;
+width: 150%;       
+height: 100%;
+object-fit: cover;
+object-position: 55% 75%; /* 横方向55%、縦方向75%に調整 */
+}
+
+.best_align_1{
+text-align: center;
+}
+.best_link{
+display: inline-block;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+background-color: rgba(240,240,240,0);
+user-select: none;
+text-shadow: 0 2px 1px rgba(0, 0, 0, 0.8);
+}
+.best_link.white{
+border: 2px solid #ffffff !important;
+color: #ffffff !important;
+}
+.best_style_1{
+padding: 10px 16px;
+font-size: 2.5em;
+line-height: 1.3;
+border-radius: 3px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 500;
+}
+.icon-red {
+width: 25px;
+height: 41px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.icon-red i {
+font-size: 24px; /* px指定でズームによる変化を防ぐ */
+line-height: 1;
+color: red;
+}
+
+
+
+
+
+/* ▲▲▲独自CSS▲▲▲ */
