@@ -387,7 +387,7 @@ function goToNewcastle() {
   // ✅ 距離に応じてフレーム間隔を調整
   const totalDistance = calculateTotalDistance(pathToNewcastle); // メートル
   const targetDuration = 20000; // 全体移動時間（ミリ秒）
-  const frameInterval = Math.max(3, targetDuration / totalFrames); // 最低5ms
+  const frameInterval = Math.max(1, targetDuration / totalFrames); // 最低5ms
 
   let frame = 0;
 
@@ -399,7 +399,7 @@ function goToNewcastle() {
       trainMarker.setLatLng(pathToNewcastle[index]); // ← マーカーを移動
       map.panTo(pathToNewcastle[index], { animate: true, duration: 0.03 });
       frame++
-      setTimeout(animate, frameInterval); // ← 速度調整（数字が少ないほどスピードアップ）50座標 × 30ms = 約1.5秒
+      requestAnimationFrame(animate); // ← 滑らかなアニメーション
     } else {
       setTimeout(() => {
         markerNewcastle.openPopup();
@@ -465,7 +465,7 @@ function goToDarlington() {
       trainMarker.setLatLng(pathToDarlington[index]); // ← マーカーを移動
       map.panTo(pathToDarlington[index], { animate: true, duration: 0.01 });
       frame++;
-      setTimeout(animate, 0.1); // ← 速度調整（数字が少ないほどスピードアップ）50座標 × 30ms = 約1.5秒
+      requestAnimationFrame(animate); // ← 滑らかなアニメーション
     } else {
       setTimeout(() => {
         markerDarlington.openPopup();
@@ -545,9 +545,9 @@ function goToDarlingtonToDurham() {
   function animate() {
     if (frame < pathToDarlingtontoDurham.length) {
       trainMarker.setLatLng(pathToDarlingtontoDurham[frame]);
-      map.panTo(pathToDarlingtontoDurham[frame], { animate: true, duration: 0.25 });
+      map.panTo(pathToDarlingtontoDurham[frame], { animate: true, duration: 0.01 });
       frame++;
-      setTimeout(animate, 5);
+      requestAnimationFrame(animate); // ← 滑らかなアニメーション
     } else {
       setTimeout(() => {
         markerDurham.openPopup();
@@ -628,7 +628,7 @@ function DurhamtoNewcastle() {
       trainMarker.setLatLng(pathToNewcastle[frame]);
       map.panTo(pathToNewcastle[frame], { animate: true, duration: 0.03 });
       frame++;
-      setTimeout(animate, 2);
+      requestAnimationFrame(animate); // ← 滑らかなアニメーション
     } else {
       setTimeout(() => {
         markerNewcastle.openPopup();
@@ -696,9 +696,9 @@ function NewcastleToYork() {
 
     if (index < pathToNewcastleToYork.length) {
       trainMarker.setLatLng(pathToNewcastleToYork[index]); // ← マーカーを移動
-      map.panTo(pathToNewcastleToYork[index], { animate: true, duration: 0.25 });
+      map.panTo(pathToNewcastleToYork[index], { animate: true, duration: 0.01 });
       frame++;
-      setTimeout(animate, 2); // ← 速度調整（数字が少ないほどスピードアップ）
+      requestAnimationFrame(animate); // ← 滑らかなアニメーション
     } else {
       setTimeout(() => {
         markerYork.openPopup();
@@ -767,7 +767,7 @@ function NewcastleToDurham() {
       trainMarker.setLatLng(pathToNewcastleToDurham[index]); // ← マーカーを移動
       map.panTo(pathToNewcastleToDurham[index], { animate: true, duration: 0.03 });
       frame++;
-      setTimeout(animate, 2); // ← 速度調整（数字が少ないほどスピードアップ）
+      requestAnimationFrame(animate); // ← 滑らかなアニメーション
     } else {
       setTimeout(() => {
         markerDurham.openPopup();
@@ -849,7 +849,7 @@ function goToDurhamToDarlington() {
       trainMarker.setLatLng(pathToDurhamtoDarlington[frame]);
       map.panTo(pathToDurhamtoDarlington[frame], { animate: true, duration: 0.03 });
       frame++;
-      setTimeout(animate, 5);
+      requestAnimationFrame(animate); // ← 滑らかなアニメーション
     } else {
       setTimeout(() => {
         markerDarlington.openPopup();
@@ -930,7 +930,7 @@ function DarlingtontoYork() {
       trainMarker.setLatLng(pathToYork[frame]);
       map.panTo(pathToYork[frame], { animate: true, duration: 0.03 });
       frame++;
-      setTimeout(animate, 2);
+      requestAnimationFrame(animate); // ← 滑らかなアニメーション
     } else {
       setTimeout(() => {
         markerYork.openPopup();
