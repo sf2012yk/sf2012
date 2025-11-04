@@ -406,7 +406,7 @@ function goToNewcastle() {
       trainMarker.setLatLng(pathToNewcastle[index]); // ← マーカーを移動
       map.panTo(pathToNewcastle[index], { animate: true, duration: 0.03 });
       frame++
-      setTimeout(animate, frameInterval); // ← 速度調整（数字が少ないほどスピードアップ）50座標 × 30ms = 約1.5秒
+      requestAnimationFrame(animate); // ← 速度調整（数字が少ないほどスピードアップ）50座標 × 30ms = 約1.5秒
     } else {
       setTimeout(() => {
         markerNewcastle.openPopup();
@@ -416,7 +416,7 @@ function goToNewcastle() {
 
     }
   }
-  animate();
+  requestAnimationFrame(animate);
 }
 
 // York → Darlington へ滑らかに移動する関数
