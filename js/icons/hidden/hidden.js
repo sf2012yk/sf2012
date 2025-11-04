@@ -14,8 +14,9 @@
 //ロンドンマラソンする、体操服全力少女
     var popupContent = `
     <div class="popup_summer">
+    <a href="Hidden.html" class="popup_link">
       <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNL_pB_U8ulCGMkYJf0m12C4mb0xXOWV8rJFxoC2k4o08VTpVhSxtMcBamHet20iij7UCQWyEPA-RZlH_JOikyQxmtWOK6NqyoZ9Xbj-b6Mk_C8YVo9a2pb3okb0s_mbIxjN3ySIgsQEbMgB4AylcL_GA=w1216-h913-s-no-gm?authuser=0" alt="ロンドンマラソンする、体操服全力少女">
-    <a href="Hidden.html" class="popup_link">ロンドンマラソンする<br/>体操服全力少女</a>
+    ロンドンマラソンする<br/>体操服全力少女</a>
     <div class="popup_caption">
     <p>
     場所の説明
