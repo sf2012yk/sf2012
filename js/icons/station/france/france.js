@@ -45,6 +45,9 @@
     <div class="next_card" id="goToLyonCard">
     <p class="next_text">▼ Lyon (420km)</span>
     </div>
+    <div class="next_card" id="ParisToBaselCard">
+    <p class="next_text">▼ Basel (600km)</span>
+    </div>
     </div>
   </div>
 `;
@@ -78,6 +81,9 @@ var markerParisLyon = L.marker([48.84423772852879, 2.3753086448157688], {
     <div id="nextVisitSection" class="popup_section">
     <div class="next_card" id="goToParisCard">
     <p class="next_text">▲ Paris (420km)</span>
+    </div>
+     <div class="next_card" id="LyonToGenevaCard">
+    <p class="next_text">▲ Geneva (150km)</span>
     </div>
     </div>
   </div>
