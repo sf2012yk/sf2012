@@ -20,7 +20,7 @@ const Cn_Arsenal = [
 ];
 const Arsenal_n = [51.56224955921888,-0.10668522326871413];
 const CP_Arsenal = adaptiveBezierCurve(Arsenal_s,Cn_Arsenal,Arsenal_n,1);
-const CP_Arsenal_Un = resamplePath(CP_Arsenal, 5);
+const CP_Arsenal_Un = resamplePath(CP_Arsenal, 2);
 const FinsburyPark = [51.5657118907105, -0.10638142307634142];
 const EndymionRd = [51.572373790977274, -0.10541906467565641];
 //カーブ北東//
@@ -31,7 +31,7 @@ const Cn_Harringay = [
 ];
 const Harringay_n = [51.579564641949624,-0.1062516742304768];
 const CP_Harringay = adaptiveBezierCurve(Harringay_s,Cn_Harringay,Harringay_n,1);
-const CP_Harringay_Un = resamplePath(CP_Harringay, 5);
+const CP_Harringay_Un = resamplePath(CP_Harringay, 2);
 const HarringayLadder = [51.583639796715595, -0.11001050590469186];
 const Hornsey = [51.58646856060271, -0.11167787881728777];
 const Alexandra_s = [51.59307840963128, -0.11647026564838794];
@@ -54,7 +54,7 @@ const Cn_Cadent = [
 ];
 const Cadent_n = [51.65652940430085,-0.17538000219745115];
 const CP_Cadent = adaptiveBezierCurve(Cadent_s,Cn_Cadent,Cadent_n,1);
-const CP_Cadent_Un = resamplePath(CP_Cadent, 5);
+const CP_Cadent_Un = resamplePath(CP_Cadent, 2);
 const CarmetWay_s = [51.664192173887926, -0.1759401572994955];
 const HadleyWood = [51.66846707699905, -0.1761533432963012];
 //カーブ北東//
@@ -65,7 +65,7 @@ const Cn_WaggonRd = [
 ];
 const WaggonRd_n = [51.67930150961244,-0.17821955727116123];
 const CP_WaggonRd = adaptiveBezierCurve(WaggonRd_s,Cn_WaggonRd,WaggonRd_n,1);
-const CP_WaggonRd_Un = resamplePath(CP_WaggonRd, 5);
+const CP_WaggonRd_Un = resamplePath(CP_WaggonRd, 2);
 const OrbitalMoterway = [51.68380451976825, -0.18150764640678022];
 const Orbital_n = [51.68863959602468, -0.1838323575447988];
 const MuttonLn_s = [51.69178115264249, -0.18665451047367415];
@@ -79,7 +79,7 @@ const Cn_LittleAmberFish = [
 ];
 const LittleAmberFish_n = [51.71322767874636,-0.2040227067978585];
 const CP_LittleAmberFish = adaptiveBezierCurve(LittleAmberFish_s,Cn_LittleAmberFish,LittleAmberFish_n,1);
-const CP_LittleAmerFish_Un = resamplePath(CP_LittleAmberFish, 5);
+const CP_LittleAmerFish_Un = resamplePath(CP_LittleAmberFish, 2);
 const BrookmansPark = [51.721023182910734, -0.20490828285713258];
 //カーブ北東//
 const BullsLn_s = [51.727097691910366,-0.20534898651292854];
@@ -89,7 +89,7 @@ const Cn_BullsLn = [
 ];
 const BullsLn_n = [51.73370850020227,-0.20801737865418343];
 const CP_BullsLn = adaptiveBezierCurve(BullsLn_s,Cn_BullsLn,BullsLn_n,1);
-const CP_BullsLn_Un = resamplePath(CP_BullsLn, 5);
+const CP_BullsLn_Un = resamplePath(CP_BullsLn, 2);
 const WelhamGreen = [51.73626917934292, -0.2105631396584275];
 //カーブ南東//
 const Marshmoor_s = [51.74428113067621,-0.21923816204004581];
@@ -99,7 +99,7 @@ const Cn_Marshmoor = [
 ];
 const Marshmoor_n = [51.752012919147994,-0.2221564054923854];
 const CP_Marshmoor = adaptiveBezierCurve(Marshmoor_s,Cn_Marshmoor,Marshmoor_n,1);
-const CP_Marshmoor_Un = resamplePath(CP_Marshmoor, 4);
+const CP_Marshmoor_Un = resamplePath(CP_Marshmoor, 2);
 //カーブ北西//
 const SouthHatfield_s = [51.75456991615299, -0.2213517400564659];
 const Cn_SouthHatfield = [
@@ -108,7 +108,7 @@ const Cn_SouthHatfield = [
 ];
 const SouthHatfield_n = [51.75879370337697, -0.2183476659563911];
 const CP_SouthHatfield = adaptiveBezierCurve(SouthHatfield_s,Cn_SouthHatfield,SouthHatfield_n,1);
-const CP_SouthHatfield_Un = resamplePath(CP_SouthHatfield, 4);
+const CP_SouthHatfield_Un = resamplePath(CP_SouthHatfield, 2);
 const FrenchHornLn = [51.76159074903815, -0.21655898755288852];
 const Hatfield = [51.7640201976442, -0.21587531157025294];
 const StAlbansRd = [51.76749851519949, -0.21582056582925466];
@@ -121,7 +121,7 @@ const Cn_MountPlesantLn = [
 ];
 const MountPlesantLn_n = [51.780816964206274,-0.21465806157524714];
 const CP_MountPlesantLn = adaptiveBezierCurve(MountPlesantLn_s,Cn_MountPlesantLn,MountPlesantLn_n,1);
-const CP_MountPlesantLn_Un = resamplePath(CP_MountPlesantLn, 4);
+const CP_MountPlesantLn_Un = resamplePath(CP_MountPlesantLn, 2);
 const BroadWaterRd = [51.79375927544913, -0.20740066443388228];
 const WelwynGardenCity = [51.800775840621924, -0.20357423677631697];
 const Knightsfield = [51.81125124574285, -0.198424987608798];
@@ -138,7 +138,7 @@ const Cn_Oaklands = [
 ];
 const Oaklands_n = [51.84589301957807,-0.18270147548328894];
 const CP_Oaklands = adaptiveBezierCurve(Oaklands_s,Cn_Oaklands,Oaklands_n,1);
-const CP_Oaklands_Un = resamplePath(CP_Oaklands, 4);
+const CP_Oaklands_Un = resamplePath(CP_Oaklands, 2);
 const MadleyHill = [51.84876291067397, -0.18327674639242833];
 const WoolmerGreen_n = [51.856070242882645, -0.18530539292309794];
 const StockensGreen_n = [51.863690046303574, -0.18583408241832503];
@@ -179,9 +179,23 @@ const Langford = [52.04721505162846, -0.26360039818854486];
 const Langford_n = [52.05968642612026, -0.2625177774289391];
 const Holme_HCI = [52.07454790607464, -0.26123550980790494];
 const Biggleswade = [52.0848759772164, -0.2609362592867028];//Biggleswade駅
+const StJohnsStBG = [52.0912393266962, -0.26192956384807475];
+const LowerCaldecote_s = [52.101164344477446, -0.263592494042746];
+const LowerCaldecote_c = [52.10536496211841, -0.2655828680791075];
+const LowerCaldecote_n = [52.10893831048578, -0.2682367001538336];
+const Seddington = [52.11591486401609, -0.2754231008079875];
+const Sandy_s = [52.120859994681204, -0.27876402850251014];
 const Sandy = [52.124694445461316, -0.2814199048123873];//Sandy駅
+const Sandy_n = [52.13089946416701, -0.28260036501012503];
+const Everton = [52.14333595667578, -0.28223776262194755];
 const TempsFordRd = [52.15741808685826, -0.27924277230789923];
-const UK_A428_STN = [52.209630624656384, -0.261798234294277];
+const TheCoppice_s = [52.17272148922489, -0.27548358164465814];
+const LittleBarford_s = [52.193311107561776, -0.27061506329668383];
+const LittleBarford_c = [52.19889133072431, -0.2685515536151968];
+const LittleBarford_n = [52.2027598742426, -0.2663059695625472];
+const Eynesbury_s = [52.209630624656384, -0.261798234294277];
+const Eynesbury_c = [52.220409083690114, -0.25459448192726347];
+const Eynesbury_n = [52.22769110362844, -0.24978796344047868];
 const StNeots = [52.23156740318316, -0.2471412462561285];//StNeots駅
 const PrioryHill = [52.23697316705209, -0.24469027828433243];
 const HuntingdonRd = [52.24623628642839, -0.24089618179772765];
@@ -199,11 +213,15 @@ const AlansRest = [52.32172857119067, -0.19650231485882902];
 const AlansRest_n = [52.32626630389599, -0.19358407150834298];
 const Huntingdon = [52.32874887039262, -0.19246427476458233];//Huntingdon駅
 const ErmineSt  = [52.33621656165476, -0.19039438877081613];
-const SpittalsWay = [52.35336146925281, -0.18619649868294907];
+const SpittalsWay_c = [52.354880367319495, -0.18556362820668687];
+const SpittalsWay_n1 = [52.3584960243125, -0.18551259297498535];
+const SpittalsWay_n2 = [52.36248537149075, -0.1867884737675248];
 const AbbotsRipton = [52.379954149791836, -0.19759981126982365];
 const AbbotsRipton_n = [52.38936885837463, -0.20345897698753176];
 const Wennington = [52.400812797027776, -0.21043272039578606];
 const Wennington_n = [52.41142440030727, -0.21719242582483525];
+const ChurchEnd_WNN = [52.432201225566416, -0.2325284303693717];
+const Conington_s = [52.43984088242848, -0.23501752034367976];
 const Conington = [52.460345959254106, -0.2365647779993113];
 const LongDrove = [52.47432001620297, -0.23752529150595394];
 const Yaxley_n = [52.52428146726928, -0.24194520587193155];
@@ -212,14 +230,28 @@ const HighSt_PT  = [52.55794589647585, -0.24370098240272728];
 const LondonRd_PT = [52.56320353301759, -0.24315475928077296];
 const OundleRd  = [52.56601657096413, -0.2438982296822507];
 const Peterborough = [52.57388879556104, -0.24981606095851133];//Peterborough駅
-const UK_A47_PT = [52.59734183761748, -0.26611646150946927];
+const MayorsWalk = [52.57823070382689, -0.25280574620935053];
+const WestFieldRd = [52.58330932434983, -0.2559477688871753];
+const GB_Peterborough = [52.588838073635536, -0.25948738364586105];
+const BandQ_Peterborough = [52.59362209499012, -0.2626631191076113];
+const SokePkwy = [52.59734183761748, -0.26611646150946927];
+const SokePkwy_n = [52.6021460047032, -0.27116185005061144];
+const Werrington_c = [52.60651807391605, -0.27746914238547127];
+const Werrington_w = [52.620745031569626, -0.30111049514907867];
 const WoodCroftRd = [52.63124889897061, -0.3185894714363961];
-const UK_B1443 = [52.6361374529963, -0.33011617988184183];
-const MaxeyRd = [52.63974947526968, -0.34306542939464324];
+const GlintonRd = [52.6361374529963, -0.33011617988184183];
+const MaxeyRd_Jn = [52.638543435303404, -0.3388251049035538];
+const Maxey_c = [52.64050962269239, -0.34513366036738113];
+const Maxey_n1 = [52.64229343815335, -0.349146245041353];
+const Maxey_n2 = [52.644493810970445, -0.35251509950973603];
 const KingSt_PT = [52.64892370199979, -0.358858968374386];
-const UK_A1175 = [52.66362664337394, -0.3814642978095853];
+const MainRd_PT = [52.66362664337394, -0.3814642978095853];
 const CasewickRd_1 = [52.677561341109126, -0.41101104830399093];
-const Essendine = [52.70036200875801, -0.4541774869842249];
+const CasewickRd_2 = [52.68408207167969, -0.42448858068286655];
+const Essendine_s = [52.694882724300584, -0.4466232206286865];
+const Essendine_c = [52.70036200875801, -0.4541774869842249];
+const Essendine_n = [52.71055700200506, -0.4648064140743394];
+
 const Careby = [52.736194754528015, -0.4888654590426432];
 const LittleBytham = [52.75122583675206, -0.49706569328451167];
 const CounthorpeRd = [52.77150739528051, -0.5101105860154728];
@@ -238,7 +270,7 @@ const Cn_Grantham = [
 ];
 const GranthamJNN = [52.91603744458935, -0.6484915335581686];
 const Cp_Grantham = adaptiveBezierCurve(Grantham,Cn_Grantham,GranthamJNN,1);
-const Cp_Grantham_Un = resamplePath(Cp_Grantham, 5);
+const Cp_Grantham_Un = resamplePath(Cp_Grantham, 2);
 //カーブを敷く//
 const Barkston_S = [52.961075210531085, -0.642336450622161];
 const Cn_Barkston = [
@@ -247,7 +279,7 @@ const Cn_Barkston = [
 ];
 const Barkston_N = [52.9705095687634, -0.644353471797429];
 const Cp_Barkston = adaptiveBezierCurve(Barkston_S,Cn_Barkston,Barkston_N,1);
-const Cp_Barkston_Un = resamplePath(Cp_Barkston, 4);
+const Cp_Barkston_Un = resamplePath(Cp_Barkston, 2);
 //カーブを敷く//
 const Gelston_S = [52.98591559384667, -0.653685074802814];
 const Cn_Gelston = [
@@ -256,7 +288,7 @@ const Cn_Gelston = [
 ];
 const Gelston_N = [52.99599027284791, -0.6660876091147059];
 const Cp_Gelston = adaptiveBezierCurve(Gelston_S,Cn_Gelston,Gelston_N,0.1);
-const Cp_Gelston_Un = resamplePath(Cp_Gelston, 5);
+const Cp_Gelston_Un = resamplePath(Cp_Gelston, 2);
 const Claypole = [53.030569258216104, -0.7238844549406901];
 const Balderton = [53.056763994640214, -0.7677105831740022];
 const BarnbyRd = [53.069866532861006, -0.789466481510494];
@@ -270,7 +302,7 @@ const Cn_EastMarkham = [
 ];
 const EastMarkham_N = [53.25783437685533, -0.8902543375537485];
 const Cp_EastMarkham = adaptiveBezierCurve(EastMarkham_S,Cn_EastMarkham,EastMarkham_N,1);
-const Cp_EastMarkham_Un = resamplePath(Cp_EastMarkham, 4);
+const Cp_EastMarkham_Un = resamplePath(Cp_EastMarkham, 2);
 //カーブを敷く//
 const Askham_S = [53.26852481202694, -0.9094139952708921];
 const Cn_Askham = [
@@ -279,7 +311,7 @@ const Cn_Askham = [
 ];
 const Askham_N = [53.27841564265329, -0.9168059395357023];
 const CP_Askham  = adaptiveBezierCurve(Askham_S,Cn_Askham,Askham_N,0.1);
-const CP_Askham_Un = resamplePath(CP_Askham , 5);
+const CP_Askham_Un = resamplePath(CP_Askham , 2);
 //カーブを敷く//
 const Eaton_S = [53.29380041683506, -0.9161203029994059];
 const Cn_Eaton = [
@@ -288,7 +320,7 @@ const Cn_Eaton = [
 ];
 const Eaton_N = [53.30482892791034, -0.9259908322135225];
 const Cp_Eaton = adaptiveBezierCurve(Eaton_S,Cn_Eaton,Eaton_N,0.1);
-const Cp_Eaton_Un = resamplePath(Cp_Eaton, 5);
+const Cp_Eaton_Un = resamplePath(Cp_Eaton, 2);
 const Retford = [53.31476215756098, -0.9475803806420339]; //Retford駅
 const BotanyBay_S = [53.332806651497506, -0.9705146372391867];
 //カーブを敷く//
@@ -299,7 +331,7 @@ const Cn_Torworth = [
 ];
 const Torworth_N = [53.369867102510554, -1.0021859206712784];
 const CP_Torworth = adaptiveBezierCurve(Torworth_S,Cn_Torworth,Torworth_N,0.5);
-const CP_Torworth_Un = resamplePath(CP_Torworth, 5);
+const CP_Torworth_Un = resamplePath(CP_Torworth, 2);
 const Ranskill = [53.38782144113041, -1.0084628469848025];
 //カーブを敷く//
 const Scrooby_N = [53.42026198632827, -1.0180929755546055];
@@ -309,7 +341,7 @@ const Cn_Bawtry_S = [
 ];
 const BawtryViaduct = [53.425838046517434, -1.0181651680060868];
 const CP_Bawtry_S = adaptiveBezierCurve(Scrooby_N,Cn_Bawtry_S,BawtryViaduct,0.1);
-const CP_Bawtry_S_Un = resamplePath(CP_Bawtry_S, 5);
+const CP_Bawtry_S_Un = resamplePath(CP_Bawtry_S, 2);
 //カーブを敷く//
 const Bawtry = [53.431523637858945, -1.0158062030811665];
 const Cn_Bawtry_N = [
@@ -318,7 +350,7 @@ const Cn_Bawtry_N = [
 ];
 const GreatNorthRoadBridge = [53.44528320999086, -1.0219465529449119];
 const CP_Bawtry_N = adaptiveBezierCurve(Bawtry,Cn_Bawtry_N,GreatNorthRoadBridge,0.1);
-const CP_Bawtry_N_Un = resamplePath(CP_Bawtry_N, 5);
+const CP_Bawtry_N_Un = resamplePath(CP_Bawtry_N, 2);
 53.44592220412242, -1.0228048597903658
 const UK_A638_RO = [53.458590885273686, -1.0436954255541075];
 const Rossington = [53.47800412342622, -1.0663083637276787];
@@ -330,7 +362,7 @@ const Cn_Rossington = [
 ];
 const ChildersWood = [53.49879956371667, -1.100658960677102];
 const CP_Rossinton = adaptiveBezierCurve(UK_M18_DS,Cn_Rossington,ChildersWood,0.5);
-const CP_Rossinton_Un = resamplePath(CP_Rossinton, 4);
+const CP_Rossinton_Un = resamplePath(CP_Rossinton, 2);
 //カーブを敷く//
 const Hitachi_Doncaster = [53.5044917477512, -1.1243806528763256];
 const Cn_Doncaster = [
@@ -339,7 +371,7 @@ const Cn_Doncaster = [
 ];
 const UK_A630_DS = [53.51546152650434, -1.1398992090672357];
 const CP_Doncaster = adaptiveBezierCurve(Hitachi_Doncaster,Cn_Doncaster,UK_A630_DS,0.5);
-const CP_Doncaster_Un = resamplePath(CP_Doncaster, 8);
+const CP_Doncaster_Un = resamplePath(CP_Doncaster, 4);
 const Doncaster = [53.52214542204585, -1.1404633953040075];
 const UK_A19_DS = [53.52943203519044, -1.1396176832331226];
 const DoncasterJn = [53.533328020619365, -1.1394963003053156];
@@ -356,7 +388,7 @@ const Cn_TempleHirst = [
 ];
 const TempleHirstCr_N = [53.735771335807094, -1.1007507427674896];
 const CP_TempleHirst = adaptiveBezierCurve(TempleHirstCr_S, Cn_TempleHirst, TempleHirstCr_N, 1);
-const CP_TempleHirst_Un = resamplePath(CP_TempleHirst, 5);
+const CP_TempleHirst_Un = resamplePath(CP_TempleHirst, 2);
 const GateforthRd = [53.75892267285599, -1.1341880691788337];
 const Hambleton = [53.77681153020014, -1.1542485890355603];
 //カーブを敷く//
@@ -367,7 +399,7 @@ const Corner_Sclam = [
 ];
 const SclamLn = [53.795558368923025, -1.168508436766995];
 const CP_Sclam_S = adaptiveBezierCurve(Sclam_S, Corner_Sclam, SclamLn, 1);
-const CP_Sclam_S_Un = resamplePath(CP_Sclam_S, 5);
+const CP_Sclam_S_Un = resamplePath(CP_Sclam_S, 2);
 //カーブを敷く//
 const Oakwood = [53.83101355788982, -1.1680476990000108];
 const Corner_Oakwood = [
@@ -376,7 +408,7 @@ const Corner_Oakwood = [
 ];
 const UK_B1223_BP = [53.8486381952248, -1.173176818393485];
 const CP_Oakwood = adaptiveBezierCurve(Oakwood,Corner_Oakwood,UK_B1223_BP,1);
-const CP_Oakwood_Un = resamplePath(CP_Oakwood, 5);
+const CP_Oakwood_Un = resamplePath(CP_Oakwood, 2);
 //カーブを敷く//
 const BoltonPercy = [53.862501657718454, -1.180452778905907];
 const CP_bolton = [　
@@ -385,7 +417,7 @@ const CP_bolton = [　
 ];
 const YorkSouthJc = [53.890318222024135, -1.16823452715311];
 const CP_BoltonPercy = adaptiveBezierCurve(BoltonPercy,CP_bolton,YorkSouthJc,1);
-const CP_BoltonPercy_Un = resamplePath(CP_BoltonPercy, 5);
+const CP_BoltonPercy_Un = resamplePath(CP_BoltonPercy, 2);
 //カーブを敷く//
 const Copman_S = [53.91071138496761, -1.139511540990051];
 const Copman_C = [　
@@ -410,7 +442,7 @@ FinsburyPark,EndymionRd,...CP_Harringay_Un,HarringayLadder,Hornsey,Alexandra_s,
 AlexandraPalace,Alexandra_n,DansfordRd,NestNursery,BinghamWay,NewSouthgate,
 OakleighRdNr,RusellLn,OakleighPark,LongmoreAv,NewBarnet,...CP_Cadent_Un,CarmetWay_s,
 HadleyWood,...CP_WaggonRd_Un,OrbitalMoterway,Orbital_n,MuttonLn_s,MuttonLn,
-PottersBar,LittleAmberFish_s,...CP_LittleAmerFish_Un,BrookmansPark,...CP_BullsLn_Un,
+PottersBar,...CP_LittleAmerFish_Un,BrookmansPark,...CP_BullsLn_Un,
 WelhamGreen,...CP_Marshmoor_Un,...CP_SouthHatfield_Un,FrenchHornLn,Hatfield,StAlbansRd,TheRide,
 ...CP_MountPlesantLn_Un,BroadWaterRd,WelwynGardenCity,Knightsfield,BesemmerRd,DigswellViaduct,
 WelwynNorth,HarmerGreen,HarmerGreen_n,...CP_Oaklands_Un,MadleyHill,WoolmerGreen_n,StockensGreen_n,
@@ -419,14 +451,15 @@ Stevenage,FairLandsWay_n,BridgeRdSN,GunnelsWoodRd,TheJohnHenry,SainsburysSN,
 ChantryLn_s,ChantryLn_n,StevenageRd,ArchRd,WymondleyRd,Benslow,Hitchin,HitchinJn,
 GroveRd,GroveRd_n,BurymeadSprings_s,BurymeadSprings,Cadwell_s,Cadwell,Cadwell_n,BlueLagoon,RiverHiz,ChurchEnd,
 Arlesey,Arlesey_n,Langford,Langford_n,Holme_HCI,
-Biggleswade,
-Sandy,TempsFordRd,UK_A428_STN,
-StNeots,PrioryHill,HuntingdonRd,LittlePaxton,GreatPaxton,GreatPaxton_n,OffordDArcy_s,OffordDArcy_n,OffordDArcy_n,
+Biggleswade,StJohnsStBG,LowerCaldecote_s,LowerCaldecote_n,LowerCaldecote_n,Seddington,Sandy_s,
+Sandy,Sandy_n,Everton,TempsFordRd,TheCoppice_s,LittleBarford_s,LittleBarford_c,LittleBarford_n,Eynesbury_s,Eynesbury_c,Eynesbury_n,
+StNeots,PrioryHill,HuntingdonRd,LittlePaxton,GreatPaxton,GreatPaxton_n,OffordDArcy_s,OffordDArcy_n,
 OffordCluny_c,OffordCluny_n,HuntingdonRd_A14,AlansRest_s,AlansRest,AlansRest_n,
-Huntingdon,ErmineSt,SpittalsWay,AbbotsRipton,AbbotsRipton_n,Wennington,Wennington_n,
-Conington,LongDrove,Yaxley_n,FlettonPkwy,HighSt_PT,LondonRd_PT,OundleRd,
-Peterborough,UK_A47_PT,WoodCroftRd,UK_B1443,MaxeyRd,KingSt_PT,UK_A1175,CasewickRd_1,
-Essendine,Careby,LittleBytham,CounthorpeRd,SwayfieldBridge,FormerCorbyGlen,
+Huntingdon,ErmineSt,SpittalsWay_c,SpittalsWay_n1,SpittalsWay_n2,AbbotsRipton,AbbotsRipton_n,Wennington,Wennington_n,
+ChurchEnd_WNN,Conington_s,Conington,LongDrove,Yaxley_n,FlettonPkwy,HighSt_PT,LondonRd_PT,OundleRd,
+Peterborough,MayorsWalk,WestFieldRd,GB_Peterborough,BandQ_Peterborough,SokePkwy,SokePkwy_n,Werrington_c,Werrington_w,
+WoodCroftRd,GlintonRd,MaxeyRd_Jn,Maxey_c,Maxey_n1,Maxey_n2,KingSt_PT,MainRd_PT,CasewickRd_1,CasewickRd_2,
+Essendine_s,Essendine_c,Essendine_n,Careby,LittleBytham,CounthorpeRd,SwayfieldBridge,FormerCorbyGlen,
 GR_TN1,GR_TN2,GreatPonton,
 ...Cp_Grantham_Un,...Cp_Barkston_Un,...Cp_Gelston_Un,Claypole,Balderton,BarnbyRd,BeaconHillRd,
 Newark,...Cp_EastMarkham_Un,...CP_Askham_Un,...Cp_Eaton_Un,
@@ -473,7 +506,7 @@ function goToYork() {
 
   const trainMarker = L.marker(Kingscross, { icon: trainIcon }).addTo(map);
 
-  const fullPath = interpolatePolyline(LNER_KnYk , 60);// ← 数字が少ないほどスピードアップ
+  const fullPath = interpolatePolyline(LNER_KnYk , 80);// ← 数字が少ないほどスピードアップ
 
   const YorkIndex = fullPath.findIndex(p => 
     Math.abs(p[0] - York_LNER1[0]) < 0.0001 && 
@@ -482,7 +515,7 @@ function goToYork() {
 
   const pathToYork = fullPath.slice(0, YorkIndex + 1);
   // ✅ ここに animatePath を定義
-  function animatePath(path, totalDuration = 1750) { //スピード調整はここで
+  function animatePath(path, totalDuration = 2000) { //スピード調整はここで
     const totalDistance = calculateTotalDistance(path);
     const speed = totalDistance / totalDuration;
 
@@ -545,7 +578,7 @@ function YorkToKingscross() {
 
   const trainMarker = L.marker(York_LNER1, { icon: trainIcon }).addTo(map);
 
-  const fullPath = [...interpolatePolyline(LNER_KnYk, 50)].reverse();// ← 数字が少ないほどスピードアップ
+  const fullPath = [...interpolatePolyline(LNER_KnYk, 80)].reverse();// ← 数字が少ないほどスピードアップ
 
   const YorkToKingscrossIndex = fullPath.findIndex(p => 
     Math.abs(p[0] - Kingscross[0]) < 0.0001 && 

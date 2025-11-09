@@ -8,7 +8,7 @@ const YorkCnP1 = [　//左上に膨らむ
 ];
 const MuseumYork = [53.962492486262875, -1.1027406445606942];
 const CP_York1 = adaptiveBezierCurve(York_LNER2,YorkCnP1,MuseumYork,1); //※カーブです
-const CP_York1_Un = resamplePath(CP_York1, 9);
+const CP_York1_Un = resamplePath(CP_York1, 4);
 const corner_skelton = [53.96222469283808, -1.107899418940041];
 const YorkCnP2 = [　//左上に膨らむ
 (53.96222469283808 + 53.963911797768375) / 2 - 0.0009, // 緯度を少し南へ
@@ -58,7 +58,7 @@ const Cn_HuttonBonville = [
 ];
 const HuttonBonville_n = [54.41598216833143,-1.4958628579598299];
 const CP_HuttonBonville = adaptiveBezierCurve(HuttonBonville_s,Cn_HuttonBonville,HuttonBonville_n,1);
-const CP_HuttonBonville_Un = resamplePath(CP_HuttonBonville, 5);
+const CP_HuttonBonville_Un = resamplePath(CP_HuttonBonville, 2);
 const UK_B1263 = [54.44242191474956, -1.5261726579335615];
 //カーブ南西//
 const DaltononTees_s = [54.46437348929675,-1.5514928536802675];
@@ -68,7 +68,7 @@ const Cn_DaltononTees = [
 ];
 const DaltononTees_n = [54.47572088370006,-1.5536386208968476];
 const CP_DaltononTees = adaptiveBezierCurve(DaltononTees_s,Cn_DaltononTees,DaltononTees_n,1);
-const CP_DaltononTees_Un = resamplePath(CP_DaltononTees, 6);
+const CP_DaltononTees_Un = resamplePath(CP_DaltononTees, 2);
 //カーブ南東//
 const CroftonTees_s = [54.47915465026166,-1.5517116305875982];
 const Cn_CroftonTees = [
@@ -77,7 +77,7 @@ const Cn_CroftonTees = [
 ];
 const CroftonTees_n = [54.48289055912525,-1.5503847145552818];
 const CP_CroftonTees = adaptiveBezierCurve(CroftonTees_s,Cn_CroftonTees,CroftonTees_n,1);
-const CP_CroftonTees_Un = resamplePath(CP_CroftonTees, 4);
+const CP_CroftonTees_Un = resamplePath(CP_CroftonTees, 2);
 const ComfortCow = [54.498120881642706, -1.5484105968744926];
 const UK_A66_DL = [54.5053396877626, -1.5485346532177628];
 const Darlington = [54.521126434342825, -1.5460040570133933];//Darlington駅
@@ -92,7 +92,7 @@ const Cn_SaltersLn = [
 ];
 const SaltersLn_n = [54.56043286182098,-1.5408493167144799];
 const CP_SaltersLn = adaptiveBezierCurve(SaltersLn_s,Cn_SaltersLn,SaltersLn_n,1);
-const CP_SaltersLn_Un = resamplePath(CP_SaltersLn, 5);
+const CP_SaltersLn_Un = resamplePath(CP_SaltersLn, 2);
 
 //カーブ北東//
 const Brafferton_s = [54.57699099872808,-1.5454980168039103];
@@ -102,7 +102,7 @@ const Cn_Brafferton = [
 ];
 const Brafferton_n = [54.58366084495327,-1.552566396487948];
 const CP_Brafferton = adaptiveBezierCurve(Brafferton_s,Cn_Brafferton,Brafferton_n,1);
-const CP_Brafferton_Un = resamplePath(CP_Brafferton, 4);
+const CP_Brafferton_Un = resamplePath(CP_Brafferton, 2);
 //カーブ南西//
 const LimeLnDr_s = [54.58478470270229,-1.5552967814813892];
 const Cn_LimeLnDr = [
@@ -111,7 +111,7 @@ const Cn_LimeLnDr = [
 ];
 const LimeLnDr_n = [54.59220730013532,-1.5601961637580506];
 const CP_LimeLnDr = adaptiveBezierCurve(LimeLnDr_s,Cn_LimeLnDr,LimeLnDr_n,1);
-const CP_LimeLnDr_Un = resamplePath(CP_LimeLnDr, 4);
+const CP_LimeLnDr_Un = resamplePath(CP_LimeLnDr, 2);
 //カーブ北西//
 const AycliffeVl_s = [54.596686434717306,-1.5585785049980763];
 const Cn_AycliffeVl = [
@@ -120,7 +120,7 @@ const Cn_AycliffeVl = [
 ];
 const AycliffeVl_n = [54.601782840900604,-1.555359854154742];
 const CP_AycliffeVl = adaptiveBezierCurve(AycliffeVl_s,Cn_AycliffeVl,AycliffeVl_n,1);
-const CP_AycliffeVl_Un = resamplePath(CP_AycliffeVl, 3);
+const CP_AycliffeVl_Un = resamplePath(CP_AycliffeVl, 2);
 //カーブ北東//
 const RicknallLn_s = [54.60431837613244,-1.5532570021970975];
 const Cn_RicknallLn = [
@@ -129,7 +129,7 @@ const Cn_RicknallLn = [
 ];
 const RicknallLn_n = [54.611103884661894,-1.537721647655835];
 const CP_RicknallLn = adaptiveBezierCurve(RicknallLn_s,Cn_RicknallLn,RicknallLn_n,1);
-const CP_RicknallLn_Un = resamplePath(CP_RicknallLn, 3);
+const CP_RicknallLn_Un = resamplePath(CP_RicknallLn, 2);
 //カーブ南東//
 const PrestonLeSkerne_s = [54.61194888714131,-1.5292673246779274];
 const Cn_PrestonLeSkerne = [
@@ -138,7 +138,7 @@ const Cn_PrestonLeSkerne = [
 ];
 const PrestonLeSkerne_n = [54.62320251249372,-1.5114591958332786];
 const CP_PrestonLeSkerne = adaptiveBezierCurve(PrestonLeSkerne_s,Cn_PrestonLeSkerne,PrestonLeSkerne_n,1);
-const CP_PrestonLeSkerne_Un = resamplePath(CP_PrestonLeSkerne, 5);
+const CP_PrestonLeSkerne_Un = resamplePath(CP_PrestonLeSkerne, 2);
 //カーブ北東//
 const Bradbury_s = [54.65256720472936,-1.501932132993153];
 const Cn_Bradbury = [
@@ -147,7 +147,7 @@ const Cn_Bradbury = [
 ];
 const Bradbury_n = [54.65860288273418,-1.5029818310483596];
 const CP_Bradbury = adaptiveBezierCurve(Bradbury_s,Cn_Bradbury,Bradbury_n,1);
-const CP_Bradbury_Un = resamplePath(CP_Bradbury, 4);
+const CP_Bradbury_Un = resamplePath(CP_Bradbury, 2);
 //カーブ北東//
 const ThrundleFarm_s = [54.66143452944784,-1.50533495132088];
 const Cn_ThrundleFarm = [
@@ -156,7 +156,7 @@ const Cn_ThrundleFarm = [
 ];
 const ThrundleFarm_n = [54.665559081857566,-1.5128606924781516];
 const CP_ThrundleFarm = adaptiveBezierCurve(ThrundleFarm_s,Cn_ThrundleFarm,ThrundleFarm_n,1);
-const CP_ThrundleFarm_Un = resamplePath(CP_ThrundleFarm, 3);
+const CP_ThrundleFarm_Un = resamplePath(CP_ThrundleFarm, 2);
 //カーブ北西//
 const GhipslyLn_s = [54.66669825890965,-1.5160677350937006];
 const Cn_GhipslyLn = [
@@ -165,7 +165,7 @@ const Cn_GhipslyLn = [
 ];
 const GhipslyLn_n = [54.66997096306613,-1.5226068353528346];
 const CP_GhipslyLn = adaptiveBezierCurve(GhipslyLn_s,Cn_GhipslyLn,GhipslyLn_n,1);
-const CP_GhipslyLn_Un = resamplePath(CP_GhipslyLn, 4);
+const CP_GhipslyLn_Un = resamplePath(CP_GhipslyLn, 2);
 //カーブ南西//
 const Mainsforth_s = [54.673365473395364,-1.526974175702541];
 const Cn_Mainsforth = [
@@ -174,7 +174,7 @@ const Cn_Mainsforth = [
 ];
 const Mainsforth_n = [54.67935565440926,-1.5308528533754524];
 const CP_Mainsforth = adaptiveBezierCurve(Mainsforth_s,Cn_Mainsforth,Mainsforth_n,1);
-const CP_Mainsforth_Un = resamplePath(CP_Mainsforth, 4);
+const CP_Mainsforth_Un = resamplePath(CP_Mainsforth, 2);
 const EastHowle_s = [54.69658356245248, -1.5331494389120455];
 const EastHowle_n = [54.70324856447823, -1.5345273901992795];
 const MetalBridge = [54.710162740973, -1.5350764937309187];
@@ -186,7 +186,7 @@ const Cn_HettSouth = [
 ];
 const HettSouth_n = [54.72498326162244,-1.5462744941916193];
 const CP_HettSouth = adaptiveBezierCurve(HettSouth_s,Cn_HettSouth,HettSouth_n,0.2);
-const CP_HettSouth_Un = resamplePath(CP_HettSouth, 4);
+const CP_HettSouth_Un = resamplePath(CP_HettSouth, 2);
 //カーブ北西//
 const HettNorth_s = [54.72892367588807,-1.55773289113804];
 const Cn_HettNorth = [
@@ -195,7 +195,7 @@ const Cn_HettNorth = [
 ];
 const HettNorth_n = [54.729221050070386,-1.574899028789216];
 const CP_HettNorth = adaptiveBezierCurve(HettNorth_s,Cn_HettNorth,HettNorth_n,0.2);
-const CP_HettNorth_Un = resamplePath(CP_HettNorth, 3);
+const CP_HettNorth_Un = resamplePath(CP_HettNorth, 2);
 const Croxdale = [54.729642326524434, -1.5818513146067439];
 //カーブ北西//
 const BrowneyLn_s = [54.73376241637099,-1.596187215059845];
@@ -205,7 +205,7 @@ const Cn_BrowneyLn = [
 ];
 const BrowneyLn_n = [54.742062301822216,-1.604941945185146];
 const CP_BrowneyLn = adaptiveBezierCurve(BrowneyLn_s,Cn_BrowneyLn,BrowneyLn_n,0.2);
-const CP_BrowneyLn_Un = resamplePath(CP_BrowneyLn, 4);
+const CP_BrowneyLn_Un = resamplePath(CP_BrowneyLn, 2);
 const LangleyMoor_s = [54.748867361320556, -1.6058628833573767];
 const LangleyMoor = [54.756834331756416, -1.6069097508662236];
 const GroveTeracce = [54.760909581586034, -1.6070876433084542];
@@ -217,7 +217,7 @@ const Cn_NevillesCross = [
 ];
 const NevillesCross_n = [54.77268804162755,-1.6016658156678945];
 const CP_NevillesCross = adaptiveBezierCurve(NevillesCross_s,Cn_NevillesCross,NevillesCross_n,1);
-const CP_NevillesCross_Un = resamplePath(CP_NevillesCross, 4);
+const CP_NevillesCross_Un = resamplePath(CP_NevillesCross, 2);
 //カーブ南東//
 const Durham_s = [54.77684044105925, -1.5862169994524649];
 const Durham_c = [54.77815227386161, -1.5836420788490948];
@@ -231,7 +231,7 @@ const Cn_NewtonHall = [
 ];
 const NewtonHall_n = [54.806155438647565,-1.563489338968832];
 const CP_NewtonHall = adaptiveBezierCurve(NewtonHall_s,Cn_NewtonHall,NewtonHall_n,1);
-const CP_NewtonHall_Un = resamplePath(CP_NewtonHall, 4);
+const CP_NewtonHall_Un = resamplePath(CP_NewtonHall, 2);
 const BurdonPl = [54.81274933106201, -1.571746634863563];
 const Plawsworth_s = [54.82284467571255, -1.5801723926020352];
 const Plawsworth_n = [54.826917473062494, -1.5817326411975456];
@@ -244,7 +244,7 @@ const Cn_ChesterMoor = [
 ];
 const ChesterMoor_n = [54.83609615449198,-1.5815885292271454];
 const CP_ChesterMoor = adaptiveBezierCurve(ChesterMoor_s,Cn_ChesterMoor,ChesterMoor_n,1);
-const CP_ChesterMoor_Un = resamplePath(CP_ChesterMoor, 4);
+const CP_ChesterMoor_Un = resamplePath(CP_ChesterMoor, 2);
 
 //カーブ北東//
 const Waldridge_s = [54.84654953902549,-1.5773828254977365];
@@ -254,7 +254,7 @@ const Cn_Waldridge = [
 ];
 const Waldridge_n = [54.85151558893752,-1.5773059682707373];
 const CP_Waldridge = adaptiveBezierCurve(Waldridge_s,Cn_Waldridge,Waldridge_n,1);
-const CP_Waldridge_Un = resamplePath(CP_Waldridge, 4);
+const CP_Waldridge_Un = resamplePath(CP_Waldridge, 2);
 const ChesterleStreet = [54.85450328396147, -1.5783317766117124];
 const NBurns_s = [54.856896139271065,-1.5790368540879731];
 const NBurns_n = [54.859601022209986,-1.5791012270945686];
@@ -266,7 +266,7 @@ const Cn_HighFlatts = [
 ];
 const HighFlatts_n = [54.872386622184294,-1.5783561959436172];
 const CP_HighFlatts = adaptiveBezierCurve(HighFlatts_s,Cn_HighFlatts,HighFlatts_n,1);
-const CP_HighFlatts_Un = resamplePath(CP_HighFlatts, 4);
+const CP_HighFlatts_Un = resamplePath(CP_HighFlatts, 2);
 //カーブ北東//
 const Birtley_s = [54.89085310403023,-1.5828193917299687];
 const Cn_Birtley = [
@@ -373,7 +373,7 @@ function goToNewcastle() {
 
   const trainMarker = L.marker(York_LNER2, { icon: trainIcon }).addTo(map);
 
-  const fullPath = interpolatePolyline(LNER_YkNc, 30);// ← 数字が少ないほどスピードアップ
+  const fullPath = interpolatePolyline(LNER_YkNc, 40);// ← 数字が少ないほどスピードアップ
 
   const newcastleIndex = fullPath.findIndex(p => 
     Math.abs(p[0] - Newcastle_LNER1[0]) < 0.0001 && 
