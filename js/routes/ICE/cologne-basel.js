@@ -14,7 +14,6 @@ const PorzRhein = [50.88299852167973, 7.064518811935749];
 const Wahn = [50.85812219991485, 7.078776438828366];
 const Spich = [50.82642736715999, 7.11519007738176];
 const Troisdorf = [50.81403279227138, 7.149834691294657];
-
 const SiegburgBonn = [50.79392077420858, 7.202679424294908];
 const NeustadtWied_w = [50.624792636383106, 7.387352795245156];
 const NeustadtWied_c = [50.621541621579865, 7.397890304014571];
@@ -191,4 +190,142 @@ Freiburg,FRStGeorgen,Scherzingen,Norsingen,Offnadingen,BadKrozingen_n,BadKrozing
 Tunsel_n,Tunsel_c,Tunsel_s,Eschbach,Heitersheim,Buggingen_n,Buggingen_c,Buggingen_s,MüllheimimMf,Auggen_n,Auggen_c,Auggen_s,
 Schliengen,Bamlach,Welmlingen,Wintersweiler,Eimeldingen,HaltingenEM,WeilamRhein,
 Basel_Bad_Bf,Basel_ICE], { color: '#000000' }).addTo(map);
+
+
+// Cologne → Basel へ滑らかに移動する関数
+//イベント登録を無制限制限
+map.on('popupopen', function (e) {
+  const BaselBtn = document.getElementById('CologneToBaselCard');
+  if (BaselBtn) {
+    const newBtn = BaselBtn.cloneNode(true);
+    BaselBtn.parentNode.replaceChild(newBtn, BaselBtn);
+
+    newBtn.addEventListener('click', () => {
+      if (!animationRunning) {
+        CologneToBasel();
+      }
+    });
+  }
+  })
+
+function CologneToBasel() {
+  if (animationRunning) return; // ← すでに動いていたら何もしない
+  animationRunning = true;
+
+  markerCologne.closePopup(); // ← 移動前にCologne（始発）のポップアップを閉じる
+
+  // 🚄 アイコン付きマーカーを表示（初期位置）
+  const trainIcon = L.icon({
+    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconSize: [40, 40],
+    iconAnchor: [25, 25],
+    className: "icon-train"
+  });
+
+  const trainMarker = L.marker(Cologne_2, { icon: trainIcon }).addTo(map);
+
+  const fullPath = interpolatePolyline(ICE_Cologne , 50);// ← 数字が少ないほどスピードアップ
+
+  const BaselIndex = fullPath.findIndex(p => 
+    Math.abs(p[0] - Basel_ICE[0]) < 0.0001 && 
+    Math.abs(p[1] - Basel_ICE[1]) < 0.0001
+  );
+
+  const pathToBasel = fullPath.slice(0, BaselIndex + 1);
+  // ✅ ここに animatePath を定義
+  const totalFrames = pathToBasel.length;
+  let frame = 0;
+
+  function animate() {
+   
+   const index = frame;
+
+    if (index < pathToBasel.length) {
+      trainMarker.setLatLng(pathToBasel[index]); // ← マーカーを移動
+      map.panTo(pathToBasel[index], { animate: true, duration: 0.03 });
+      frame++;
+      setTimeout(animate, 20); // ← 速度調整（数字が少ないほどスピードアップ）50座標 × 30ms = 約1.5秒
+    } else {
+      setTimeout(() => {
+        markerBaselSBB.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 100);
+
+    }
+  }
+  animate();
+}
+
+// Basel　→　Cologneへ滑らかに戻る関数
+//イベント登録を無制限制限
+map.on('popupopen', function (e) {
+  const BaselToCologneBtn = document.getElementById('BaselSBBCologneCard');
+  if (BaselToCologneBtn) {
+    const newBtn = BaselToCologneBtn.cloneNode(true);
+    BaselToCologneBtn.parentNode.replaceChild(newBtn, BaselToCologneBtn);
+
+    newBtn.addEventListener('click', () => {
+      if (!animationRunning) {
+        BaselToCologne();
+      }
+    });
+  }
+  })
+
+function BaselToCologne() {
+  if (animationRunning) return; // ← すでに動いていたら何もしない
+  animationRunning = true;
+
+  markerBaselSBB.closePopup(); // ← 移動前にBaselのポップアップを閉じる
+
+  // 🚄 アイコン付きマーカーを表示（初期位置）
+  const trainIcon = L.icon({
+    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconSize: [40, 40],
+    iconAnchor: [25, 25],
+    className: "icon-train"
+  });
+
+  const trainMarker = L.marker(Basel_ICE, { icon: trainIcon }).addTo(map);
+
+  const fullPath = [...interpolatePolyline(ICE_Cologne, 50)].reverse();// ← 数字が少ないほどスピードアップ
+
+  const BaselToCologneIndex = fullPath.findIndex(p => 
+    Math.abs(p[0] - Cologne_2[0]) < 0.0001 && 
+    Math.abs(p[1] - Cologne_2[1]) < 0.0001
+  );
+
+  const pathToBaselToCologne = fullPath.slice(0, BaselToCologneIndex + 1);
+  
+// 最初にジャンプを防ぐ
+  map.panTo(pathToBaselToCologne[0], { animate: false });
+
+
+  let frame = 0;
+
+  function animate() {
+   
+   const index = frame;
+
+    if (index < pathToBaselToCologne.length) {
+      trainMarker.setLatLng(pathToBaselToCologne[index]); // ← マーカーを移動
+      map.panTo(pathToBaselToCologne[index], { animate: true, duration: 0.03 });
+      frame++;
+      setTimeout(animate, 20); // ← 速度調整（数字が少ないほどスピードアップ）
+    } else {
+      setTimeout(() => {
+        markerCologne.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 100);
+
+    }
+  }
+  animate();
+}
+
+
 

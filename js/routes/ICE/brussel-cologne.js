@@ -77,13 +77,13 @@ map.on('popupopen', function (e) {
 
     newBtn.addEventListener('click', () => {
       if (!animationRunning) {
-        goToCologne();
+        BrusselToCologne();
       }
     });
   }
   })
 
-function goToCologne() {
+function BrusselToCologne() {
   if (animationRunning) return; // ← すでに動いていたら何もしない
   animationRunning = true;
 
