@@ -124,7 +124,6 @@ const Walheim = [47.641806696816126, 7.263242239676666];
 const Tagolsheim = [47.65574655507159, 7.2640801639624035];
 const Illfurth_s = [47.67087611814854, 7.266832011031054];
 const Mulhouse = [47.742037878796026, 7.34325152978516];
-
 const PontdeRiedisheim = [47.74366317092304, 7.346741700800041];
 const Habsheim = [47.737751796025535, 7.4182152260391];
 const Sierentz = [47.65609997325178, 7.459524605740021];
@@ -133,8 +132,6 @@ const LaChaussée = [47.60956694151289, 7.531079589699977];
 const SaintLouisMU = [47.59039754585212, 7.55507934178064];
 const SanktJohann_n = [47.57711555243574, 7.56797926780272];
 const SanktJohann_c = [47.57132189729631, 7.571651101165167];
-
-
 const Basel_SNCF = [47.54759555829391, 7.582497948519677];
 const Basel_TGV = [47.54717812533671, 7.5890015703746885];
 
@@ -160,3 +157,140 @@ Chavanne,LeVernoy,Aibre,Laire,Héricourt_s,
 BelfortTGV,PetitCroix,MontreuxVieux,Dannemarie,Walheim,Tagolsheim,Illfurth_s,
 Mulhouse,PontdeRiedisheim,Habsheim,Sierentz,Bartenheim,LaChaussée,SaintLouisMU,SanktJohann_n,SanktJohann_c,Basel_SNCF,
 Basel_TGV], { color: '#000000', smoothFactor: '1.0'}).addTo(map);
+
+// Paris → Basel へ滑らかに移動する関数
+//イベント登録を無制限制限
+map.on('popupopen', function (e) {
+  const ParisToBaselBtn = document.getElementById('ParisToBaselCard');
+  if (ParisToBaselBtn) {
+    const newBtn = ParisToBaselBtn.cloneNode(true);
+    ParisToBaselBtn.parentNode.replaceChild(newBtn, ParisToBaselBtn);
+
+    newBtn.addEventListener('click', () => {
+      if (!animationRunning) {
+        ParisToBasel();
+      }
+    });
+  }
+  })
+
+function ParisToBasel() {
+  if (animationRunning) return; // ← すでに動いていたら何もしない
+  animationRunning = true;
+
+  markerParisLyon.closePopup(); // ← 移動前にParis（始発）のポップアップを閉じる
+
+  // 🚄 アイコン付きマーカーを表示（初期位置）
+  const trainIcon = L.icon({
+    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconSize: [40, 40],
+    iconAnchor: [25, 25],
+    className: "icon-train"
+  });
+
+  const trainMarker = L.marker(ParisLyon_ZR, { icon: trainIcon }).addTo(map);
+
+  const fullPath = interpolatePolyline(LGV_PRZR , 50);// ← 数字が少ないほどスピードアップ
+
+  const ParisToBaselIndex = fullPath.findIndex(p => 
+    Math.abs(p[0] - Basel_TGV[0]) < 0.0001 && 
+    Math.abs(p[1] - Basel_TGV[1]) < 0.0001
+  );
+
+  const pathToParisToBasel = fullPath.slice(0, ParisToBaselIndex + 1);
+  // ✅ ここに animatePath を定義
+  const totalFrames = pathToParisToBasel.length;
+  let frame = 0;
+
+  function animate() {
+   
+   const index = frame;
+
+    if (index < pathToParisToBasel.length) {
+      trainMarker.setLatLng(pathToParisToBasel[index]); // ← マーカーを移動
+      map.panTo(pathToParisToBasel[index], { animate: true, duration: 0.03 });
+      frame++;
+      setTimeout(animate, 20); // ← 速度調整（数字が少ないほどスピードアップ）50座標 × 30ms = 約1.5秒
+    } else {
+      setTimeout(() => {
+        markerBaselSBB.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 100);
+
+    }
+  }
+  animate();
+}
+
+// Basel　→　Parisへ滑らかに戻る関数
+//イベント登録を無制限制限
+map.on('popupopen', function (e) {
+  const BaselToParisBtn = document.getElementById('BaselToParisCard');
+  if (BaselToParisBtn) {
+    const newBtn = BaselToParisBtn.cloneNode(true);
+    BaselToParisBtn.parentNode.replaceChild(newBtn, BaselToParisBtn);
+
+    newBtn.addEventListener('click', () => {
+      if (!animationRunning) {
+        BaselToParis();
+      }
+    });
+  }
+  })
+
+function BaselToParis() {
+  if (animationRunning) return; // ← すでに動いていたら何もしない
+  animationRunning = true;
+
+  markerBaselSBB.closePopup(); // ← 移動前にBaselのポップアップを閉じる
+
+  // 🚄 アイコン付きマーカーを表示（初期位置）
+  const trainIcon = L.icon({
+    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconSize: [40, 40],
+    iconAnchor: [25, 25],
+    className: "icon-train"
+  });
+
+  const trainMarker = L.marker(Basel_TGV, { icon: trainIcon }).addTo(map);
+
+  const fullPath = [...interpolatePolyline(LGV_PRZR, 50)].reverse();// ← 数字が少ないほどスピードアップ
+
+  const BaselToParisIndex = fullPath.findIndex(p => 
+    Math.abs(p[0] - ParisLyon_ZR[0]) < 0.0001 && 
+    Math.abs(p[1] - ParisLyon_ZR[1]) < 0.0001
+  );
+
+  const pathToBaselToParis = fullPath.slice(0, BaselToParisIndex + 1);
+  
+// 最初にジャンプを防ぐ
+  map.panTo(pathToBaselToParis[0], { animate: false });
+
+
+  let frame = 0;
+
+  function animate() {
+   
+   const index = frame;
+
+    if (index < pathToBaselToParis.length) {
+      trainMarker.setLatLng(pathToBaselToParis[index]); // ← マーカーを移動
+      map.panTo(pathToBaselToParis[index], { animate: true, duration: 0.03 });
+      frame++;
+      setTimeout(animate, 20); // ← 速度調整（数字が少ないほどスピードアップ）
+    } else {
+      setTimeout(() => {
+        markerParisLyon.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 100);
+
+    }
+  }
+  animate();
+}
+
+
