@@ -26,6 +26,38 @@
     className: "icon-station_2"
     });
 
+//  Vienna Airport
+    var popupContent = `
+      <div class="popup_summer">
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczOz6lC01rHUrihqsVKW5fOETpwYkiWlYPRvkxOIymZ55DCHjrezaRkt4_-lgKAuzkWqqXn8Hj5T11Ftkk2uWc1ZEpDfF6La3F8ssPMgVqTpV9_QDqJbdzCTeOUO-iZ__-FDwqLcLcTzG2_H2ZZA2JA2HQ=w1216-h913-s-no-gm?authuser=0" 
+       data-lightbox="image" 
+       data-title="ViennaAirport">
+      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczOz6lC01rHUrihqsVKW5fOETpwYkiWlYPRvkxOIymZ55DCHjrezaRkt4_-lgKAuzkWqqXn8Hj5T11Ftkk2uWc1ZEpDfF6La3F8ssPMgVqTpV9_QDqJbdzCTeOUO-iZ__-FDwqLcLcTzG2_H2ZZA2JA2HQ=w1216-h913-s-no-gm?authuser=0" alt="Vienna Airport Station">
+    </a>
+    <div class="popup_caption">
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczOz6lC01rHUrihqsVKW5fOETpwYkiWlYPRvkxOIymZ55DCHjrezaRkt4_-lgKAuzkWqqXn8Hj5T11Ftkk2uWc1ZEpDfF6La3F8ssPMgVqTpV9_QDqJbdzCTeOUO-iZ__-FDwqLcLcTzG2_H2ZZA2JA2HQ=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Vienna Airport Station" class="popup_link">Vienna Airport Station</a>
+    <p>
+    駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="FlughafenWienToViennaCard">
+    <p class="next_text">◀ Vienna City（17km）</span>
+    </div>
+    </div>
+  </div>
+`;
+var markerFlughafenWien = L.marker([48.120983101278604, 16.563218852576007], {
+  icon: stationIcon //途中駅はstation_2_Icon、画像なしの駅はstation_3_Iconで切り替え
+})
+  .bindPopup(popupContent, {
+  className: 'popup_wrapper', // ← ここで外側にクラスを追加
+  autoPan: true,
+  keepInView: true,
+})
+  .addTo(map);
+
 //  Vienna
     var popupContent = `
       <div class="popup_summer">
@@ -45,8 +77,8 @@
     <div class="next_card" id="ViennaToSalzburgCard">
     <p class="next_text">◀ Salzburg（320km）</span>
     </div>
-    <div class="next_card" id="ViennaToBudapestCard">
-    <p class="next_text">▶ Budapest（250km）</span>
+    <div class="next_card" id="ViennaToFlughafenWienCard">
+    <p class="next_text">&#x2708; Airport（17km）</span>
     </div>
     <div class="next_card" id="ViennaToVeneziaCard">
     <p class="next_text">▼ Venezia（670km）</span>
@@ -54,7 +86,7 @@
     </div>
   </div>
 `;
-var markerVienna = L.marker([48.18500525586605, 16.377671700808875], {
+var markerViennaCentral = L.marker([48.18500525586605, 16.377671700808875], {
   icon: stationIcon //途中駅はstation_2_Iconで切り替え
 })
   .bindPopup(popupContent, {
