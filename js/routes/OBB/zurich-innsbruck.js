@@ -70,3 +70,142 @@ const OBB_Zurich = L.polyline
   BuchsSG,BuchsJC,RheinRiver,SchaanVaduz,ForstHilti,Nendeln,Tisis,Gisingen,Altenstadt,FeldkirchJC,
   Feldkirch,Bludenz,St_Anton_Am_Arlberg,Landeck_Zams,Imst_Pitztal,Ötztal,
   Innsbruck], { color: '#000000' }).addTo(map);
+
+
+// Zurich → Innsbruck へ滑らかに移動する関数
+//イベント登録を無制限制限
+map.on('popupopen', function (e) {
+  const InnsbruckBtn = document.getElementById('ZurichToInnsbruckCard');
+  if (InnsbruckBtn) {
+    const newBtn = InnsbruckBtn.cloneNode(true);
+    InnsbruckBtn.parentNode.replaceChild(newBtn, InnsbruckBtn);
+
+    newBtn.addEventListener('click', () => {
+      if (!animationRunning) {
+        goToInnsbruck();
+      }
+    });
+  }
+  })
+
+function goToInnsbruck() {
+  if (animationRunning) return; // ← すでに動いていたら何もしない
+  animationRunning = true;
+
+  markerZurich.closePopup(); // ← 移動前にZurich（始発）のポップアップを閉じる
+
+  // 🚄 アイコン付きマーカーを表示（初期位置）
+  const trainIcon = L.icon({
+    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconSize: [40, 40],
+    iconAnchor: [25, 25],
+    className: "icon-train"
+  });
+
+  const trainMarker = L.marker(Zurich_OBB, { icon: trainIcon }).addTo(map);
+
+  const fullPath = interpolatePolyline(OBB_Zurich , 50);// ← 数字が少ないほどスピードアップ
+
+  const InnsbruckIndex = fullPath.findIndex(p => 
+    Math.abs(p[0] - Innsbruck[0]) < 0.0001 && 
+    Math.abs(p[1] - Innsbruck[1]) < 0.0001
+  );
+
+  const pathToInnsbruck = fullPath.slice(0, InnsbruckIndex + 1);
+  // ✅ ここに animatePath を定義
+  const totalFrames = pathToInnsbruck.length;
+  let frame = 0;
+
+  function animate() {
+   
+   const index = frame;
+
+    if (index < pathToInnsbruck.length) {
+      trainMarker.setLatLng(pathToInnsbruck[index]); // ← マーカーを移動
+      map.panTo(pathToInnsbruck[index], { animate: true, duration: 0.03 });
+      frame++;
+      setTimeout(animate, 20); // ← 速度調整（数字が少ないほどスピードアップ）50座標 × 30ms = 約1.5秒
+    } else {
+      setTimeout(() => {
+        markerInnsbruck.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 100);
+
+    }
+  }
+  animate();
+}
+
+// Innsbruck　→　Zurichへ滑らかに戻る関数
+//イベント登録を無制限制限
+map.on('popupopen', function (e) {
+  const InnsbruckToZurichBtn = document.getElementById('InnsbruckToZurichCard');
+  if (InnsbruckToZurichBtn) {
+    const newBtn = InnsbruckToZurichBtn.cloneNode(true);
+    InnsbruckToZurichBtn.parentNode.replaceChild(newBtn, InnsbruckToZurichBtn);
+
+    newBtn.addEventListener('click', () => {
+      if (!animationRunning) {
+        InnsbruckToZurich();
+      }
+    });
+  }
+  })
+
+function InnsbruckToZurich() {
+  if (animationRunning) return; // ← すでに動いていたら何もしない
+  animationRunning = true;
+
+  markerInnsbruck.closePopup(); // ← 移動前にInnsbruckのポップアップを閉じる
+
+  // 🚄 アイコン付きマーカーを表示（初期位置）
+  const trainIcon = L.icon({
+    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconSize: [40, 40],
+    iconAnchor: [25, 25],
+    className: "icon-train"
+  });
+
+  const trainMarker = L.marker(Innsbruck, { icon: trainIcon }).addTo(map);
+
+  const fullPath = [...interpolatePolyline(OBB_Zurich, 50)].reverse();// ← 数字が少ないほどスピードアップ
+
+  const InnsbruckToZurichIndex = fullPath.findIndex(p => 
+    Math.abs(p[0] - Zurich_OBB[0]) < 0.0001 && 
+    Math.abs(p[1] - Zurich_OBB[1]) < 0.0001
+  );
+
+  const pathToInnsbruckToZurich = fullPath.slice(0, InnsbruckToZurichIndex + 1);
+  
+// 最初にジャンプを防ぐ
+  map.panTo(pathToInnsbruckToZurich[0], { animate: false });
+
+
+  let frame = 0;
+
+  function animate() {
+   
+   const index = frame;
+
+    if (index < pathToInnsbruckToZurich.length) {
+      trainMarker.setLatLng(pathToInnsbruckToZurich[index]); // ← マーカーを移動
+      map.panTo(pathToInnsbruckToZurich[index], { animate: true, duration: 0.03 });
+      frame++;
+      setTimeout(animate, 20); // ← 速度調整（数字が少ないほどスピードアップ）
+    } else {
+      setTimeout(() => {
+        markerZurich.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 100);
+
+    }
+  }
+  animate();
+}
+
+
+
