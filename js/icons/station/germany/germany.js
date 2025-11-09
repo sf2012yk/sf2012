@@ -82,8 +82,8 @@ var markerAachen = L.marker([50.767679838672564, 6.090875981954147], {
     <div class="next_card" id="CologneToBrusselCard">
     <p class="next_text">◀ Brussel（230km）</span>
     </div>
-    <div class="next_card" id="CologneToManheimCard">
-    <p class="next_text">▼ Manheim（250km）</span>
+    <div class="next_card" id="CologneToBaselCard">
+    <p class="next_text">▼ Basel（480km）</span>
     </div>
     </div>
   </div>
