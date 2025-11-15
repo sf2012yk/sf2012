@@ -5,7 +5,7 @@
 
 
 /* 共通 */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1101px) {
 .caption_home{
 position: absolute;
 left: 0%;
@@ -41,7 +41,7 @@ text-shadow: 0 2px 1px rgba(0,0,0,0.8);
 margin-bottom: 0;
 }
 }
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1100px) {
 .caption_home{
 position: absolute;
 right: 0%;
@@ -76,7 +76,7 @@ display: inline-block;
 overflow: hidden;
 }
 .Baner_image{
-width: 1000px;
+width: 1100px;
 height: 450px;
 margin: 0 auto 3em;
 position: relative;

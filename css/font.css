@@ -1,5 +1,17 @@
 /* ライトボックスで使う文字のclass/*
-/* 共通 */  
+/* 共通 */ 
+
+
+@media (max-width: 1100px) {
+    :root {
+        /* --cont: 100%; */
+        --cont: calc(100vw - 60px);
+        --font-size-xsmall: calc(20 / 750 * 100vw);
+        --font-size-small: calc(26 / 750 * 100vw);
+        --font-size-normal: calc(32 / 750 * 100vw);
+        --font-size-large: calc(36 / 750 * 100vw);
+    }
+}
 .title{
 font-weight: bold;
 font-size: 1.3em;
@@ -60,8 +72,9 @@ margin-top: -1px;
 border: 2px solid #ddd;
 }
 .caption.white p{
-font: normal 14px/130% Arial, Helvetica, sans-serif;
+font: normal 16px/130% Arial, Helvetica, sans-serif;
 letter-spacing: 0.8px;
+font-weight: bold;
 color: #000;
 }
 .caption >.pin{
@@ -86,10 +99,9 @@ content: '\f276';
 
 
 /* パソコンPC専用 */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1101px) {
 .Top_image .read_1{
-font-size: 4em;
-font-style: italic;
+font-size: 3.5em;
 color: #fff;
 font-family: Austin News,georgia,times,serif;
 width: 1500px;
@@ -98,8 +110,7 @@ z-index: 1000;
 text-shadow: 0 3px 1px rgba(0, 0, 0, 0.9);
 }
 .Top_image .read_2{
-font-size: 2.5em;
-font-style: italic;
+font-size: 2.1em;
 color: #fff;
 font-family: Austin News,georgia,times,serif;
 width: 1500px;
@@ -137,14 +148,12 @@ width: 6px;
 color: #000;
 font-size: 25px;
 text-align: center;
-margin-bottom: 3em;
 }
 }
-/* スマホSP専用（1）1099px以下 */
-@media screen and (max-width: 1099px) {
+/* スマホSP専用（1）1100px以下 */
+@media screen and (max-width: 1100px) {
 .Top_image .read_1{
-font-size: 3.3em;
-font-style: italic;
+font-size: 3em;
 color: #fff;
 font-family: Austin News,georgia,times,serif;
 width: 1500px;
@@ -153,8 +162,7 @@ z-index: 1000;
 text-shadow: 0 3px 1px rgba(0, 0, 0, 0.9);
 }
 .Top_image .read_2{
-font-size: 2em;
-font-style: italic;
+font-size: 1.8em;
 color: #fff;
 font-family: Austin News,georgia,times,serif;
 width: 1500px;
@@ -173,7 +181,7 @@ height: 100%;
 width: 6px;
 }
 .editorcss h2{
-font-size: 1.5em;
+font-size: 2em;
 margin-bottom: 1em;
 position: relative;
 line-height: 1.8;
@@ -197,6 +205,5 @@ font-family: Austin News,georgia,times,serif;
 color: #000;
 font-size: 0.88em;
 text-align: center;
-margin-bottom: 3em;
 }
 }
