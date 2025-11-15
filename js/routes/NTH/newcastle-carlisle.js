@@ -8,7 +8,7 @@ const Cn_PotteryLn_NTH = [
 ];
 const PotteryLn_s_NTH = [54.965366935721256,-1.618701106879188];
 const CP_PotteryLn_NTH = adaptiveBezierCurve(PotteryLn_n_NTH,Cn_PotteryLn_NTH,PotteryLn_s_NTH,0.01);
-const CP_PotteryLn_NTH_Un = resamplePath(CP_PotteryLn_NTH, 5);
+const CP_PotteryLn_NTH_Un = resamplePath(CP_PotteryLn_NTH, 3);
 
 //カーブ北西//
 const KingEdward_Bd_n_NTH = [54.962401114879036,-1.6153462999806965];
@@ -18,7 +18,7 @@ const Cn_KingEdward_Bd_NTH = [
 ];
 const KingEdward_Bd_s_NTH = [54.96045355192529,-1.6152741252638652];
 const CP_KingEdward_Bd_NTH = adaptiveBezierCurve(KingEdward_Bd_n_NTH,Cn_KingEdward_Bd_NTH,KingEdward_Bd_s_NTH,0.4);
-const CP_KingEdward_Bd_NTH_Un = resamplePath(CP_KingEdward_Bd_NTH, 6);
+const CP_KingEdward_Bd_NTH_Un = resamplePath(CP_KingEdward_Bd_NTH, 3);
 const Tyne_Rd_NC_NTH = [54.958593191695414, -1.6172818841657346];
 const Dunston = [54.950088839200944, -1.6415414319873984];
 const Metrocentre = [54.958953940680416, -1.6653147523278675];
@@ -44,3 +44,143 @@ Corbridge,
 Hexham,HaydonBridge,BardonMill,
 Haltwhistle,Brampton,Wetheral,
 Carlisle_NTH], { color: '#000000' }).addTo(map);
+
+
+// Newcastle → Carlisle へ滑らかに移動する関数
+//イベント登録を無制限制限
+map.on('popupopen', function (e) {
+  const NewcastleToCarlisleBtn = document.getElementById('NewcastleToCarlisleCard');
+  if (NewcastleToCarlisleBtn) {
+    const newBtn = NewcastleToCarlisleBtn.cloneNode(true);
+    NewcastleToCarlisleBtn.parentNode.replaceChild(newBtn, NewcastleToCarlisleBtn);
+
+    newBtn.addEventListener('click', () => {
+      if (!animationRunning) {
+        NewcastleToCarlisle();
+      }
+    });
+  }
+  })
+
+function NewcastleToCarlisle() {
+  if (animationRunning) return; // ← すでに動いていたら何もしない
+  animationRunning = true;
+
+  markerNewcastle.closePopup(); // ← 移動前にNewcastle（始発）のポップアップを閉じる
+
+  // 🚄 アイコン付きマーカーを表示（初期位置）
+  const trainIcon = L.icon({
+    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconSize: [40, 40],
+    iconAnchor: [25, 25],
+    className: "icon-train"
+  });
+
+  const trainMarker = L.marker(Newcastle_NTH, { icon: trainIcon }).addTo(map);
+
+  const fullPath = interpolatePolyline(NTH_NcCr , 50);// ← 数字が少ないほどスピードアップ
+
+  const NewcastleToCarlisleIndex = fullPath.findIndex(p => 
+    Math.abs(p[0] - Carlisle_NTH[0]) < 0.0001 && 
+    Math.abs(p[1] - Carlisle_NTH[1]) < 0.0001
+  );
+
+  const pathToNewcastleToCarlisle = fullPath.slice(0, NewcastleToCarlisleIndex + 1);
+  // ✅ ここに animatePath を定義
+  const totalFrames = pathToNewcastleToCarlisle.length;
+  let frame = 0;
+
+  function animate() {
+   
+   const index = frame;
+
+    if (index < pathToNewcastleToCarlisle.length) {
+      trainMarker.setLatLng(pathToNewcastleToCarlisle[index]); // ← マーカーを移動
+      map.panTo(pathToNewcastleToCarlisle[index], { animate: true, duration: 0.03 });
+      frame++;
+      setTimeout(animate, 20); // ← 速度調整（数字が少ないほどスピードアップ）50座標 × 30ms = 約1.5秒
+    } else {
+      setTimeout(() => {
+        markerCarlisle.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 100);
+
+    }
+  }
+  animate();
+}
+
+
+// Carlisle　→　Newcastleへ滑らかに戻る関数
+//イベント登録を無制限制限
+map.on('popupopen', function (e) {
+  const CarlisleToNewcastleBtn = document.getElementById('CarlisleToNewcastleCard');
+  if (CarlisleToNewcastleBtn) {
+    const newBtn = CarlisleToNewcastleBtn.cloneNode(true);
+    CarlisleToNewcastleBtn.parentNode.replaceChild(newBtn, CarlisleToNewcastleBtn);
+
+    newBtn.addEventListener('click', () => {
+      if (!animationRunning) {
+        CarlisleToNewcastle();
+      }
+    });
+  }
+  })
+
+function CarlisleToNewcastle() {
+  if (animationRunning) return; // ← すでに動いていたら何もしない
+  animationRunning = true;
+
+  markerCarlisle.closePopup(); // ← 移動前にCarlisleのポップアップを閉じる
+
+  // 🚄 アイコン付きマーカーを表示（初期位置）
+  const trainIcon = L.icon({
+    iconUrl: "image/icon/train_test.png",// アイコン画像のURL
+    iconRetinaUrl:"image/icon/train_test@2x.png",
+    iconSize: [40, 40],
+    iconAnchor: [25, 25],
+    className: "icon-train"
+  });
+
+  const trainMarker = L.marker(Carlisle_NTH, { icon: trainIcon }).addTo(map);
+
+  const fullPath = [...interpolatePolyline(NTH_NcCr, 50)].reverse();// ← 数字が少ないほどスピードアップ
+
+  const CarlisleToNewcastleIndex = fullPath.findIndex(p => 
+    Math.abs(p[0] - Newcastle_NTH[0]) < 0.0001 && 
+    Math.abs(p[1] - Newcastle_NTH[1]) < 0.0001
+  );
+
+  const pathToCarlisleToNewcastle = fullPath.slice(0, CarlisleToNewcastleIndex + 1);
+  
+// 最初にジャンプを防ぐ
+  map.panTo(pathToCarlisleToNewcastle[0], { animate: false });
+
+
+  let frame = 0;
+
+  function animate() {
+   
+   const index = frame;
+
+    if (index < pathToCarlisleToNewcastle.length) {
+      trainMarker.setLatLng(pathToCarlisleToNewcastle[index]); // ← マーカーを移動
+      map.panTo(pathToCarlisleToNewcastle[index], { animate: true, duration: 0.03 });
+      frame++;
+      setTimeout(animate, 20); // ← 速度調整（数字が少ないほどスピードアップ）
+    } else {
+      setTimeout(() => {
+        markerNewcastle.openPopup();
+        map.removeLayer(trainMarker); // アイコンを削除
+        animationRunning = false;
+      }, 100);
+
+    }
+  }
+  animate();
+}
+
+
+
