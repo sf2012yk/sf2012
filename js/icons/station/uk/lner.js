@@ -124,6 +124,9 @@ var markerPeterborough = L.marker([52.57388879556104, -0.24981606095851133], {
     <div class="next_card" id="YorkToNewcastleCard">
     <p class="next_text">▲ NewCastle（130km）</span>
     </div>
+    <div class="next_card" id="YorkToLeedsCard">
+    <p class="next_text">◀ Leeds（400km）</span>
+    </div>
     <div class="next_card" id="YorkToLondonCard">
     <p class="next_text">▼ London（300km）</span>
     </div>
@@ -241,6 +244,9 @@ var markerDurham = L.marker([54.77983780775699, -1.5814880478633844], {
     </div>
     <div class="next_card" id="NewcastleToYorkCard">
     <p class="next_text">▼ York（130km）</span>
+    </div>
+     <div class="next_card" id="NewcastleToCarlisleCard">
+    <p class="next_text">◀ Carlisle（95km）</span>
     </div>
     </div>
   </div>

@@ -105,40 +105,55 @@ var markerBirmingham = L.marker([52.47781931496408, -1.89936569926818], {
   .addTo(map);
 
 
-
-// AW01 Manchester駅：
+//  Manchester
     var popupContent = `
-     <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPVN3pw1fT0DCD8T_YAty8jHqZf5SlE3s6ZGvxNJIzkJ0UlnRx1fF1U2U5HwiYoIQa1-ST2UKJhpIIYunuhswCDnTPkngg101gju2FUir1Rbsp_VRbDYNTL6g_UE26EfU7lfvT84n9UT9Ci2GeHyMHF9A=w855-h641-s-no-gm?authuser=0" 
+      <div class="popup_summer">
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczNsBkTfmYFDKQnQA4Dt7MSObkcpW1b1l-DjE-MgrQ6bnF51q-uXnM4OCnTKUJoy_NMWX-NIQAGFGkIT-GPYf2wDkQnJ3JWAGpYlCPENxOBYJvac-ja9Dky-bE--DIZIQbhk3XuuHIq3-fAvGJ9QUHmctw=w1216-h913-s-no-gm?authuser=0" 
        data-lightbox="image" 
-       data-title="Manchester Station">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczPVN3pw1fT0DCD8T_YAty8jHqZf5SlE3s6ZGvxNJIzkJ0UlnRx1fF1U2U5HwiYoIQa1-ST2UKJhpIIYunuhswCDnTPkngg101gju2FUir1Rbsp_VRbDYNTL6g_UE26EfU7lfvT84n9UT9Ci2GeHyMHF9A=w855-h641-s-no-gm?authuser=0" alt="Manchester Station">
+       data-title="Manchester">
+      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNsBkTfmYFDKQnQA4Dt7MSObkcpW1b1l-DjE-MgrQ6bnF51q-uXnM4OCnTKUJoy_NMWX-NIQAGFGkIT-GPYf2wDkQnJ3JWAGpYlCPENxOBYJvac-ja9Dky-bE--DIZIQbhk3XuuHIq3-fAvGJ9QUHmctw=w1216-h913-s-no-gm?authuser=0" alt="Manchester Station">
     </a>
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPVN3pw1fT0DCD8T_YAty8jHqZf5SlE3s6ZGvxNJIzkJ0UlnRx1fF1U2U5HwiYoIQa1-ST2UKJhpIIYunuhswCDnTPkngg101gju2FUir1Rbsp_VRbDYNTL6g_UE26EfU7lfvT84n9UT9Ci2GeHyMHF9A=w855-h641-s-no-gm?authuser=0" data-lightbox="image" data-title="Manchester Station" class="popup_link">Manchester Station</a>
+    <div class="popup_caption">
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczNsBkTfmYFDKQnQA4Dt7MSObkcpW1b1l-DjE-MgrQ6bnF51q-uXnM4OCnTKUJoy_NMWX-NIQAGFGkIT-GPYf2wDkQnJ3JWAGpYlCPENxOBYJvac-ja9Dky-bE--DIZIQbhk3XuuHIq3-fAvGJ9QUHmctw=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Manchester Station" class="popup_link">Manchester Piccadilly</a>
+    <p>
+    マンチェスター・ピカデリー駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="ManchesterToPrestonCard">
+    <p class="next_text">▲ Preston（70km）</span>
+    </div>
+    <div class="next_card" id="ManchesterToLeedsCard">
+    <p class="next_text">▶ Leeds（70km）</span>
+    </div>
+    <div class="next_card" id="ManchesterToBirminghamCard">
+    <p class="next_text">▼ Birmingham（150km）</span>
+    </div>
+    </div>
   </div>
 `;
 var markerManchester = L.marker([53.477308627188506, -2.2299399620126628], {
-  icon: stationIcon
+  icon: stationIcon 
 })
   .bindPopup(popupContent, {
   className: 'popup_wrapper', // ← ここで外側にクラスを追加
   autoPan: true,
   keepInView: true,
 })
-  .openPopup()
   .addTo(map);
 
 
 //  Preston
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczOaC9z8GTOTyBmX5fJqJyC0qRfo056lg1Y57U8tGs4yl2PMuVDkSLAuKR1htWS-zqNj1ocYk-4RfJEK4_hyDmO4-9wp6N51ReNbfvd4fGDcSMrNuL9xmsORNtv50W2ZIAbik3iYK3LkqAz7PAVgjh1i0g=w1216-h913-s-no-gm?authuser=0" 
        data-lightbox="image" 
        data-title="Preston">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="Preston Station">
+      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczOaC9z8GTOTyBmX5fJqJyC0qRfo056lg1Y57U8tGs4yl2PMuVDkSLAuKR1htWS-zqNj1ocYk-4RfJEK4_hyDmO4-9wp6N51ReNbfvd4fGDcSMrNuL9xmsORNtv50W2ZIAbik3iYK3LkqAz7PAVgjh1i0g=w1216-h913-s-no-gm?authuser=0" alt="Preston Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="Preston Station" class="popup_link">Preston Station</a>
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczOaC9z8GTOTyBmX5fJqJyC0qRfo056lg1Y57U8tGs4yl2PMuVDkSLAuKR1htWS-zqNj1ocYk-4RfJEK4_hyDmO4-9wp6N51ReNbfvd4fGDcSMrNuL9xmsORNtv50W2ZIAbik3iYK3LkqAz7PAVgjh1i0g=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Preston Station" class="popup_link">Preston Station</a>
     <p>
     駅の説明
     </p>
@@ -164,13 +179,13 @@ var markerPreston = L.marker([53.755888528479566, -2.7073275847086293], {
 //  Carlisle
     var popupContent = `
       <div class="popup_summer">
-    <a href="画像URLを貼る" 
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczNdAgB8oKDgszo_ZZZtcA5KUYMmjGF6b25yFR7K850sIYeiL8psFb2ILKWhzkqz__MJqJWvk--x3P9OaM56aEDP0UmqeNEJM06_i45ZPK14MnF0DLqnTlGt-z8kZUb_MFIm9E-MyZoysBO7MnyW9mcfog=w1216-h913-s-no-gm?authuser=0" 
        data-lightbox="image" 
        data-title="Carlisle">
-      <img class="popup_img" loading="eager" src="画像URLを貼る" alt="Carlisle Station">
+      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNdAgB8oKDgszo_ZZZtcA5KUYMmjGF6b25yFR7K850sIYeiL8psFb2ILKWhzkqz__MJqJWvk--x3P9OaM56aEDP0UmqeNEJM06_i45ZPK14MnF0DLqnTlGt-z8kZUb_MFIm9E-MyZoysBO7MnyW9mcfog=w1216-h913-s-no-gm?authuser=0" alt="Carlisle Station">
     </a>
     <div class="popup_caption">
-    <a href="画像URLを貼る" data-lightbox="image" data-title="Carlisle Station" class="popup_link">Carlisle Station</a>
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczNdAgB8oKDgszo_ZZZtcA5KUYMmjGF6b25yFR7K850sIYeiL8psFb2ILKWhzkqz__MJqJWvk--x3P9OaM56aEDP0UmqeNEJM06_i45ZPK14MnF0DLqnTlGt-z8kZUb_MFIm9E-MyZoysBO7MnyW9mcfog=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Carlisle Station" class="popup_link">Carlisle Station</a>
     <p>
     駅の説明
     </p>
@@ -183,7 +198,7 @@ var markerPreston = L.marker([53.755888528479566, -2.7073275847086293], {
     <div class="next_card" id="CarlisleToNewcastleCard">
     <p class="next_text">▶ Newcastle（95km）</span>
     </div>
-    <div class="next_card" id="CarlisleTLeedsCard">
+    <div class="next_card" id="CarlisleToLeedsCard">
     <p class="next_text">▼Leeds（180km）</span>
     </div>
     </div>
