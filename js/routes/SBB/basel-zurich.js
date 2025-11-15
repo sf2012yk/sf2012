@@ -16,7 +16,7 @@ const SBB_Basel = L.polyline
 // Basel → Zurich へ滑らかに移動する関数
 //イベント登録を無制限制限
 map.on('popupopen', function (e) {
-  const BaselToZurichBtn = document.getElementById('BaselToZurichCard');
+  const BaselToZurichBtn = document.getElementById('BaselSBBToZurichCard');
   if (BaselToZurichBtn) {
     const newBtn = BaselToZurichBtn.cloneNode(true);
     BaselToZurichBtn.parentNode.replaceChild(newBtn, BaselToZurichBtn);
