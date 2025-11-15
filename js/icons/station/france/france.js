@@ -45,6 +45,9 @@
     <div class="next_card" id="goToLyonCard">
     <p class="next_text">▼ Lyon (420km)</span>
     </div>
+    <div class="next_card" id="ParisToMarseilleCard">
+    <p class="next_text">▼ Marseille (720km)</span>
+    </div>
     <div class="next_card" id="ParisToBaselCard">
     <p class="next_text">▼ Basel (600km)</span>
     </div>
@@ -82,8 +85,11 @@ var markerParisLyon = L.marker([48.84423772852879, 2.3753086448157688], {
     <div class="next_card" id="goToParisCard">
     <p class="next_text">▲ Paris (420km)</span>
     </div>
-     <div class="next_card" id="LyonToGenevaCard">
-    <p class="next_text">▲ Geneva (150km)</span>
+    <div class="next_card" id="LyonToGenevaCard">
+    <p class="next_text">▶ Geneva (150km)</span>
+    </div>
+    <div class="next_card" id="LyonToMarseilleCard">
+    <p class="next_text">▼ Marseille (320km)</span>
     </div>
     </div>
   </div>
@@ -115,14 +121,14 @@ var markerPartDieu = L.marker([45.7603030076784, 4.860375801911088], {
     </div>
     <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
     <div id="nextVisitSection" class="popup_section">
-    <div class="next_card" id="MarseilleToA駅Card">
-    <p class="next_text">▶ A駅（aakm）</span>
+    <div class="next_card" id="MarseilleToParisCard">
+    <p class="next_text">▲ Paris（720km）</span>
     </div>
-    <div class="next_card" id="MarseilleToB駅Card">
-    <p class="next_text">▶ B駅（bbkm）</span>
+    <div class="next_card" id="MarseilleToLyonCard">
+    <p class="next_text">▲ Lyon（320km）</span>
     </div>
-    <div class="next_card" id="MarseilleToC駅Card">
-    <p class="next_text">▶ C駅（cckm）</span>
+    <div class="next_card" id="MarseilleToBarcelonaCard">
+    <p class="next_text">◀ Barcelona（500km）</span>
     </div>
     </div>
   </div>
