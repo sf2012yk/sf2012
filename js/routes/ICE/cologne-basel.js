@@ -261,7 +261,7 @@ function CologneToBasel() {
 // Basel　→　Cologneへ滑らかに戻る関数
 //イベント登録を無制限制限
 map.on('popupopen', function (e) {
-  const BaselToCologneBtn = document.getElementById('BaselSBBCologneCard');
+  const BaselToCologneBtn = document.getElementById('BaselSBBToCologneCard');
   if (BaselToCologneBtn) {
     const newBtn = BaselToCologneBtn.cloneNode(true);
     BaselToCologneBtn.parentNode.replaceChild(newBtn, BaselToCologneBtn);
