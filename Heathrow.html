@@ -390,10 +390,13 @@ function startMusic() {
   });
 }
 
-// 毎回イベントリスナーを登録（更新後も有効）
-document.addEventListener('click', startMusic);
-document.addEventListener('keydown', startMusic);
-document.addEventListener('scroll', startMusic);
+// ページ読み込み後にイベント登録
+document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('click', startMusic);
+  document.addEventListener('keydown', startMusic);
+  document.addEventListener('scroll', startMusic);
+});
+
 </script>
 
 <!-- オープンストリートマップのスクリプト -->
