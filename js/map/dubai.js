@@ -1,8 +1,8 @@
-// ロンドン
-var map = L.map('maplondon', {center: [51.51066089388474, -0.11054466987584811],
-        zoom: 13.4,
-        minZoom: 5,
-        maxZoom: 14,
+
+var map = L.map('mapdubai', {center: [25.24799726392085, 55.364589666991996],
+        zoom: 12.5,
+        minZoom: 8,
+        maxZoom: 13,
         zoomControl: false,
         scrollWheelZoom: false,  // ホイールズーム禁止
         doubleClickZoom: false,  // ダブルクリックズーム禁止
@@ -16,6 +16,7 @@ var map = L.map('maplondon', {center: [51.51066089388474, -0.11054466987584811],
 
         });
 
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">London UK</a>'
+      attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">Duai UAE</a>'
     }).addTo(map);

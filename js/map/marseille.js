@@ -1,7 +1,6 @@
 
-// ※リヨン フランス
-var map = L.map('maplyon', {center: [45.75935312761585, 4.831562283861954],
-        zoom: 13.4,
+var map = L.map('mapmarseille', {center: [43.298505302192126, 5.375920435246286],
+       zoom: 13.4,
         minZoom: 7,
         maxZoom: 14,
         zoomControl: false,
@@ -18,5 +17,5 @@ var map = L.map('maplyon', {center: [45.75935312761585, 4.831562283861954],
         });
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">Lyon FR</a>'
+      attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">Marseille France</a>'
     }).addTo(map);
