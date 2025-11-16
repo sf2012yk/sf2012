@@ -362,42 +362,6 @@ Europe Map
 </div>
 </footer>
 
-<!-- 音楽プレイヤー -->
-<audio id="emirates" src="music/emirates.mp3" loop></audio>
-
-<!-- 音楽再生スクリプト -->
-<script>
-function startMusic() {
-  const audio = document.getElementById('emirates');
-  if (!audio || !audio.paused) return;
-
-  const maxVolume = 0.3; // 音量の上限（0.0〜1.0）
-  audio.volume = 0;
-
-  audio.play().then(() => {
-    let volume = 0;
-    const fadeInterval = setInterval(() => {
-      if (volume < maxVolume) {
-        volume += 0.02;
-        audio.volume = Math.min(volume, maxVolume);
-      } else {
-        clearInterval(fadeInterval);
-      }
-    }, 200);
-  }).catch((e) => {
-    console.warn("音楽の再生に失敗しました:", e);
-  });
-}
-
-// ページ読み込み後にイベント登録
-document.addEventListener('DOMContentLoaded', () => {
-  document.addEventListener('click', startMusic);
-  document.addEventListener('keydown', startMusic);
-  document.addEventListener('scroll', startMusic);
-});
-
-</script>
-
 <!-- オープンストリートマップのスクリプト -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/beautifymarker@1.0.9/leaflet-beautify-marker-icon.js"></script>

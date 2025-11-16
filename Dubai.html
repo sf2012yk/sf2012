@@ -289,6 +289,30 @@ Next Visit ?
 </a>
 </div>
 </div>
+<!-- 再生プレイヤー -->
+<h2 class="scroll fadeLeftSlide">
+Emirates Misic
+</h2>
+<div class="uk_item_info_1" style="margin-bottom: 3em;">
+<div class="info_left_item">
+<iframe loading="lazy" width="640" height="390" src="https://www.youtube.com/embed/cxAEWeWdJlc" title="Emirates Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div>
+<div class="info_right_item">
+<div class="text_side">
+<h3 class="city_title">
+エミレーツ航空の機内BGMを聞きながら旅してみませんか？
+</h3>
+<div class="text_font"> 
+<p class="mb_1em">
+ドバイを拠点とする大手航空会社、エミレーツ航空のBGMをご視聴いただけます。
+よかったら同時に再生して、旅の雰囲気をつかんでみてください。
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
 </div>
 </div>
 <!-- TOPに戻れる矢印（back_top) -->
@@ -376,42 +400,6 @@ Europe Map
 </p>
 </div>
 </footer>
-
-<!-- 音楽プレイヤー -->
-<audio id="emirates" src="music/emirates.mp3" loop></audio>
-
-<!-- 音楽再生スクリプト -->
-<script>
-function startMusic() {
-  const audio = document.getElementById('emirates');
-  if (!audio || !audio.paused) return;
-
-  const maxVolume = 0.3; // 音量の上限（0.0〜1.0）
-  audio.volume = 0;
-
-  audio.play().then(() => {
-    let volume = 0;
-    const fadeInterval = setInterval(() => {
-      if (volume < maxVolume) {
-        volume += 0.02;
-        audio.volume = Math.min(volume, maxVolume);
-      } else {
-        clearInterval(fadeInterval);
-      }
-    }, 200);
-  }).catch((e) => {
-    console.warn("音楽の再生に失敗しました:", e);
-  });
-}
-
-// ページ読み込み後にイベント登録
-document.addEventListener('DOMContentLoaded', () => {
-  document.addEventListener('click', startMusic);
-  document.addEventListener('keydown', startMusic);
-  document.addEventListener('scroll', startMusic);
-});
-
-</script>
 
 <!-- オープンストリートマップのスクリプト -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
