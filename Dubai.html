@@ -384,18 +384,17 @@ Europe Map
 <script>
 function startMusic() {
   const audio = document.getElementById('emirates');
-  if (!audio) return;
+  if (!audio || !audio.paused) return;
 
-  // すでに再生中なら何もしない
-  if (!audio.paused) return;
-
+  const maxVolume = 0.3; // 音量の上限（0.0〜1.0）
   audio.volume = 0;
+
   audio.play().then(() => {
     let volume = 0;
     const fadeInterval = setInterval(() => {
-      if (volume < 1) {
-        volume += 0.05;
-        audio.volume = Math.min(volume, 1);
+      if (volume < maxVolume) {
+        volume += 0.02;
+        audio.volume = Math.min(volume, maxVolume);
       } else {
         clearInterval(fadeInterval);
       }
