@@ -28,12 +28,12 @@ color: #000000;
 text-decoration: none;
 }
 .map-marker a{
-font-size: 0.85em;
+font-size: 15px;
 color: #000000;
 text-decoration: none;
 }
 .map-marker.capital >a{
-font-size: 1em;
+font-size: 17px;
 color: #a11b1b;
 text-decoration: none;
 }
