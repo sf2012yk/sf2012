@@ -67,10 +67,6 @@ font-weight: bold;
 padding: 10px;
 background-color: #fff;
 }
-.caption.white{
-margin-top: -1px;
-border: 2px solid #ddd;
-}
 .caption.white p{
 font: normal 16px/130% Arial, Helvetica, sans-serif;
 letter-spacing: 0.8px;
