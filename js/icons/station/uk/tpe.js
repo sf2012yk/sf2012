@@ -29,13 +29,13 @@
 //  Leeds
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOb5Qs6tU2oXF2uBvcE3KctV9BZd-nUTFdVe1OWSU_JIQcrIT_M0lbjn5DQwj2aNuZhvxyQNHOEwteRJX_kShJHC9Tj-bmFl523SBKI6OK5gJzGbSoO4sKfgdtuO4U0ykWY5piNJM9TqHcI_60pPtDeGw=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Leeds.JPG" 
        data-lightbox="image" 
        data-title="Leeds">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczOb5Qs6tU2oXF2uBvcE3KctV9BZd-nUTFdVe1OWSU_JIQcrIT_M0lbjn5DQwj2aNuZhvxyQNHOEwteRJX_kShJHC9Tj-bmFl523SBKI6OK5gJzGbSoO4sKfgdtuO4U0ykWY5piNJM9TqHcI_60pPtDeGw=w1216-h913-s-no-gm?authuser=0" alt="Leeds Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Leeds.JPG" alt="Leeds Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOb5Qs6tU2oXF2uBvcE3KctV9BZd-nUTFdVe1OWSU_JIQcrIT_M0lbjn5DQwj2aNuZhvxyQNHOEwteRJX_kShJHC9Tj-bmFl523SBKI6OK5gJzGbSoO4sKfgdtuO4U0ykWY5piNJM9TqHcI_60pPtDeGw=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Leeds Station" class="popup_link">Leeds Station</a>
+    <a href="image/map/station/Leeds.JPG" data-lightbox="image" data-title="Leeds Station" class="popup_link">Leeds Station</a>
     <p>
     リーズ駅の説明
     </p>

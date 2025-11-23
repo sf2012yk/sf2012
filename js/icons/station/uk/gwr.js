@@ -29,13 +29,13 @@
 // GW_01 Paddington駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczN-sXjoM_julfAy79icUCV25Jx_1CgoMlUECJzCB21aRBYp1jlUCBZLjb9DlH3QEMWpk20o4Muq4yOVerUDbbNvuvWdrXCTfQUgUne3GRTUPPAgKQUXOdYCGdRPg6DNwtfcWhbnmrW50D8pt129W7_ZYw=w855-h641-s-no-gm?authuser=0" 
+    <a href="image/map/station/Paddington.JPG" 
        data-lightbox="image" 
        data-title="Paddington">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczN-sXjoM_julfAy79icUCV25Jx_1CgoMlUECJzCB21aRBYp1jlUCBZLjb9DlH3QEMWpk20o4Muq4yOVerUDbbNvuvWdrXCTfQUgUne3GRTUPPAgKQUXOdYCGdRPg6DNwtfcWhbnmrW50D8pt129W7_ZYw=w855-h641-s-no-gm?authuser=0" alt="Paddington Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Paddington.JPG" alt="Paddington Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczN-sXjoM_julfAy79icUCV25Jx_1CgoMlUECJzCB21aRBYp1jlUCBZLjb9DlH3QEMWpk20o4Muq4yOVerUDbbNvuvWdrXCTfQUgUne3GRTUPPAgKQUXOdYCGdRPg6DNwtfcWhbnmrW50D8pt129W7_ZYw=w855-h641-s-no-gm?authuser=0" data-lightbox="image" data-title="Paddington Station" class="popup_link">Paddington Station</a>
+    <a href="image/map/station/Paddington.JPG" data-lightbox="image" data-title="Paddington Station" class="popup_link">Paddington Station</a>
     <p>
     ヴィクトリア様式の美しい駅舎を持つ、ロンドン西部のターミナル駅。映画『パディントン』の舞台として知られている。
     </p>
@@ -68,13 +68,13 @@ var markerPaddington = L.marker([51.516894337841045, -0.17712164609673156], {
 // GW_01 Paddington空港専用
     var popupContent = `
      <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczO4-iwcVGYR2BbXSEI7aNjC4ozoZeKqS_pfd7NpYw8uVbRZp6eU0Km3YMxNjBWn1PNpvJ6VRJNhWnXDsCE8wJfEoxrxo1VtSVFTGpfimav0KEjhZDw5IY1fixCC71ahzVCH9Vgnw4nN1gUcaKUvLbBwZQ=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Paddington_airport.JPG" 
        data-lightbox="image" 
        data-title="Paddington">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczO4-iwcVGYR2BbXSEI7aNjC4ozoZeKqS_pfd7NpYw8uVbRZp6eU0Km3YMxNjBWn1PNpvJ6VRJNhWnXDsCE8wJfEoxrxo1VtSVFTGpfimav0KEjhZDw5IY1fixCC71ahzVCH9Vgnw4nN1gUcaKUvLbBwZQ=w1216-h913-s-no-gm?authuser=0" alt="Paddington Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Paddington_airport.JPG" alt="Paddington Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczO4-iwcVGYR2BbXSEI7aNjC4ozoZeKqS_pfd7NpYw8uVbRZp6eU0Km3YMxNjBWn1PNpvJ6VRJNhWnXDsCE8wJfEoxrxo1VtSVFTGpfimav0KEjhZDw5IY1fixCC71ahzVCH9Vgnw4nN1gUcaKUvLbBwZQ=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Paddington Station" class="popup_link">Paddington (&#x2708; Access)</a>
+    <a href="image/map/station/Paddington_airport.JPG" data-lightbox="image" data-title="Paddington Station" class="popup_link">Paddington (&#x2708; Access)</a>
     <p>
     ヴィクトリア様式の美しい駅舎を持つ、ロンドン西部のターミナル駅。パディントン駅からロンドン・ヒースロー空港へ直接アクセスすることが可能だ。
     </p>
@@ -103,13 +103,13 @@ var markerPaddingtonLHR = L.marker([51.51820949995243, -0.1781408423165258], {
 //  Slough
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" 
+    <a href="image/map/station/Slough.JPG" 
        data-lightbox="image" 
        data-title="Slough">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" alt="Slough Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Slough.JPG" alt="Slough Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="Slough Station" class="popup_link">Slough Station</a>
+    <a href="image/map/station/Slough.JPG" data-lightbox="image" data-title="Slough Station" class="popup_link">Slough Station</a>
     <p>
     Slough駅の説明
     </p>
@@ -141,13 +141,13 @@ var markerSlough = L.marker([51.511845860102135, -0.591373216810744], {
 //  Windsor
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" 
+    <a href="image/map/station/Windsor.JPG" 
        data-lightbox="image" 
        data-title="Windsor">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" alt="Windsor Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Windsor.JPG" alt="Windsor Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="Windsor Station" class="popup_link">Windsor Station</a>
+    <a href="image/map/station/Windsor.JPG" data-lightbox="image" data-title="Windsor Station" class="popup_link">Windsor Station</a>
     <p>
     駅の説明
     </p>
@@ -177,13 +177,13 @@ var markerWindsor = L.marker([51.48317195088449, -0.6100296685527282], {
 //  GW_03 Reading駅：
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" 
+    <a href="image/map/station/Reading.JPG" 
        data-lightbox="image" 
        data-title="Reading">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" alt="Reading Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Reading.JPG" alt="Reading Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="Reading Station" class="popup_link">Reading Station</a>
+    <a href="image/map/station/Reading.JPG" data-lightbox="image" data-title="Reading Station" class="popup_link">Reading Station</a>
     <p>
     レディング駅は実質乗換専用駅。
     </p>
@@ -217,13 +217,13 @@ var markerReading = L.marker([51.45934668763566, -0.9732287208600584], {
 //  GWR Bath Spa
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" 
+    <a href="image/map/station/BathSpa.JPG" 
        data-lightbox="image" 
        data-title="Bath Spa">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" alt="Bath Spa Station">
+      <img class="popup_img" loading="eager" src="image/map/station/BathSpa.JPG" alt="Bath Spa Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="Bath Spa Station" class="popup_link">Bath Spa Station</a>
+    <a href="image/map/station/BathSpa.JPG" data-lightbox="image" data-title="Bath Spa Station" class="popup_link">Bath Spa Station</a>
     <p>
     Bath Spaの説明
     </p>
@@ -256,13 +256,13 @@ var markerBathSpa = L.marker([51.37779463871984, -2.3569100502506695], {
 // GW_06 Bristol_Temple_Meads駅：
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczO5hSjMiE555ijI6J4l8zDoi4_LMwBZcEWdKWgwM8dRPn2hxGsCKr7y5ynZT3c2DO8LdeOQ3UoQ-JZxGkM-41eGpqRnpVzsRJOdQqeb16oI5ZRKINsNA8D9j-5NLd9wSvf56F9iTS18GH7lda-oQUmFpQ=w1130-h848-s-no-gm?authuser=0" 
+    <a href="image/map/station/Bristol.JPG" 
        data-lightbox="image" 
        data-title="Bristol Temple Meads">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczO5hSjMiE555ijI6J4l8zDoi4_LMwBZcEWdKWgwM8dRPn2hxGsCKr7y5ynZT3c2DO8LdeOQ3UoQ-JZxGkM-41eGpqRnpVzsRJOdQqeb16oI5ZRKINsNA8D9j-5NLd9wSvf56F9iTS18GH7lda-oQUmFpQ=w1130-h848-s-no-gm?authuser=0" alt="Bristol Temple Meads Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Bristol.JPG" alt="Bristol Temple Meads Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczO5hSjMiE555ijI6J4l8zDoi4_LMwBZcEWdKWgwM8dRPn2hxGsCKr7y5ynZT3c2DO8LdeOQ3UoQ-JZxGkM-41eGpqRnpVzsRJOdQqeb16oI5ZRKINsNA8D9j-5NLd9wSvf56F9iTS18GH7lda-oQUmFpQ=w1130-h848-s-no-gm?authuser=0" data-lightbox="image" data-title="Bristol Temple Meads Station" class="popup_link">Bristol Temple Meads Station</a>
+    <a href="image/map/station/Bristol.JPG" data-lightbox="image" data-title="Bristol Temple Meads Station" class="popup_link">Bristol Temple Meads Station</a>
     <p>
     ブリストルの代表駅。
     </p>
@@ -295,12 +295,12 @@ var markerBristol = L.marker([51.44953427862961, -2.5807735188100613], {
 // GW_06 Taunton駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPu9G7xWwGwJQP7AAIq93SteLojmMik74lh_tqtGNhLpJLrRre9BPqxiu2HKW11LsHrQK79CFo6BreKgVTtJUS-VJjeQdp6tJAW2BRu7_cGBv7U8caK16jEwe8WrkvOSR4iPefWzBsHiyoWICVSqPUzDg=w855-h641-s-no-gm?authuser=0" 
+    <a href="image/map/station/Taunton.JPG" 
        data-lightbox="image" 
        data-title="Taunton Station">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" alt="Paddington Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Taunton.JPG" alt="Paddington Station">
     </a>
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="Paddington Station" class="popup_link">Paddington Station</a>
+    <a href="image/map/station/Taunton.JPG" data-lightbox="image" data-title="Paddington Station" class="popup_link">Paddington Station</a>
   </div>
 `;
 var marker = L.marker([51.02331377215021, -3.1035371321110854], {
@@ -317,12 +317,12 @@ var marker = L.marker([51.02331377215021, -3.1035371321110854], {
 // GW_06 Exeter St Davids駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOviB6qZjQrmVMm3AFlXsN0gsgksZOe6JwLQolHFtbTA0NjBJ_Hqb0FKSyIND3hVgldnRyMgcq5MOhNI1GrZSJlR3c8VnInEkcAVxfMMU9JAoeRQ5fzHXF4KpZnxVTgHF29je_YjEZTYkNuBuZGiOvuqw=w855-h641-s-no-gm?authuser=0" 
+    <a href="image/map/station/Exeter.JPG" 
        data-lightbox="image" 
        data-title="Exeter St Davids Station">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczOviB6qZjQrmVMm3AFlXsN0gsgksZOe6JwLQolHFtbTA0NjBJ_Hqb0FKSyIND3hVgldnRyMgcq5MOhNI1GrZSJlR3c8VnInEkcAVxfMMU9JAoeRQ5fzHXF4KpZnxVTgHF29je_YjEZTYkNuBuZGiOvuqw=w855-h641-s-no-gm?authuser=0" alt="Exeter St Davids Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Exeter.JPG" alt="Exeter St Davids Station">
     </a>
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOviB6qZjQrmVMm3AFlXsN0gsgksZOe6JwLQolHFtbTA0NjBJ_Hqb0FKSyIND3hVgldnRyMgcq5MOhNI1GrZSJlR3c8VnInEkcAVxfMMU9JAoeRQ5fzHXF4KpZnxVTgHF29je_YjEZTYkNuBuZGiOvuqw=w855-h641-s-no-gm?authuser=0" data-lightbox="image" data-title="Exeter St Davids Station" class="popup_link">Exeter St Davids Station</a>
+    <a href="image/map/station/Exeter.JPG" data-lightbox="image" data-title="Exeter St Davids Station" class="popup_link">Exeter St Davids Station</a>
   </div>
 `;
 var marker = L.marker([50.7294333305537, -3.543730040076946], {
@@ -339,12 +339,12 @@ var marker = L.marker([50.7294333305537, -3.543730040076946], {
 // GW_06 Dawlish駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNmJ9AAjh-18RYEDIF6X_2Wv13MpyqRCbF6KHn9S67rRV3z0sYvnQtwYRWRLeBgAyF-1OuTsv4bypP1e6D6rrxEcYsqErBzOn_J_jn8cPdesNLPPzvtkiJdYvl-oN_ByKd1HAbhEMGQvP0ZhrrjTGlq7w=w855-h641-s-no-gm?authuser=0" 
+    <a href="image/map/station/Dawlish.JPG" 
        data-lightbox="image" 
        data-title="Dawlish Station">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNmJ9AAjh-18RYEDIF6X_2Wv13MpyqRCbF6KHn9S67rRV3z0sYvnQtwYRWRLeBgAyF-1OuTsv4bypP1e6D6rrxEcYsqErBzOn_J_jn8cPdesNLPPzvtkiJdYvl-oN_ByKd1HAbhEMGQvP0ZhrrjTGlq7w=w855-h641-s-no-gm?authuser=0" alt="Dawlish Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Dawlish.JPG" alt="Dawlish Station">
     </a>
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNmJ9AAjh-18RYEDIF6X_2Wv13MpyqRCbF6KHn9S67rRV3z0sYvnQtwYRWRLeBgAyF-1OuTsv4bypP1e6D6rrxEcYsqErBzOn_J_jn8cPdesNLPPzvtkiJdYvl-oN_ByKd1HAbhEMGQvP0ZhrrjTGlq7w=w855-h641-s-no-gm?authuser=0" data-lightbox="image" data-title="Dawlish Station" class="popup_link">Dawlish Station</a>
+    <a href="image/map/station/Dawlish.JPG" data-lightbox="image" data-title="Dawlish Station" class="popup_link">Dawlish Station</a>
   </div>
 `;
 var marker = L.marker([50.58064708288686, -3.4645937602425056], {
@@ -363,13 +363,13 @@ var marker = L.marker([50.58064708288686, -3.4645937602425056], {
     var popupContent = `
 
      <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczMjjKuhNTuRs4DjHeVRR_TVSfbMDXQGgI1jbGQgrBBqjI0yhi_TNRI9_OAKYRoW6dv3wgMp0fS8Q2PEpF99zr3Vdp9fEhNorFKiaIe3invwyUEf25gjjF2iKxDiBI7M-n1A2TlnncYwWJiuYgQt3ITsgg=w855-h641-s-no-gm?authuser=0" 
+    <a href="image/map/station/Plymouth.JPG" 
        data-lightbox="image" 
        data-title="Plymouth Station">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczMjjKuhNTuRs4DjHeVRR_TVSfbMDXQGgI1jbGQgrBBqjI0yhi_TNRI9_OAKYRoW6dv3wgMp0fS8Q2PEpF99zr3Vdp9fEhNorFKiaIe3invwyUEf25gjjF2iKxDiBI7M-n1A2TlnncYwWJiuYgQt3ITsgg=w855-h641-s-no-gm?authuser=0" alt="Plymouth Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Plymouth.JPG" alt="Plymouth Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczMjjKuhNTuRs4DjHeVRR_TVSfbMDXQGgI1jbGQgrBBqjI0yhi_TNRI9_OAKYRoW6dv3wgMp0fS8Q2PEpF99zr3Vdp9fEhNorFKiaIe3invwyUEf25gjjF2iKxDiBI7M-n1A2TlnncYwWJiuYgQt3ITsgg=w855-h641-s-no-gm?authuser=0" data-lightbox="image" data-title="Plymouth Station" class="popup_link">Plymouth Station</a>
+    <a href="image/map/station/Plymouth.JPG" data-lightbox="image" data-title="Plymouth Station" class="popup_link">Plymouth Station</a>
     <p>
     プリマスの代表駅。
     </p>
@@ -400,13 +400,13 @@ var markerPlymouth = L.marker([50.3776674014801, -4.144099241952264], {
     var popupContent = `
     
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPVN3pw1fT0DCD8T_YAty8jHqZf5SlE3s6ZGvxNJIzkJ0UlnRx1fF1U2U5HwiYoIQa1-ST2UKJhpIIYunuhswCDnTPkngg101gju2FUir1Rbsp_VRbDYNTL6g_UE26EfU7lfvT84n9UT9Ci2GeHyMHF9A=w855-h641-s-no-gm?authuser=0" 
+    <a href="image/map/station/Penzance.JPG" 
        data-lightbox="image" 
        data-title="Penzance">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczPVN3pw1fT0DCD8T_YAty8jHqZf5SlE3s6ZGvxNJIzkJ0UlnRx1fF1U2U5HwiYoIQa1-ST2UKJhpIIYunuhswCDnTPkngg101gju2FUir1Rbsp_VRbDYNTL6g_UE26EfU7lfvT84n9UT9Ci2GeHyMHF9A=w855-h641-s-no-gm?authuser=0" alt="Penzance Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Penzance.JPG" alt="Penzance Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPVN3pw1fT0DCD8T_YAty8jHqZf5SlE3s6ZGvxNJIzkJ0UlnRx1fF1U2U5HwiYoIQa1-ST2UKJhpIIYunuhswCDnTPkngg101gju2FUir1Rbsp_VRbDYNTL6g_UE26EfU7lfvT84n9UT9Ci2GeHyMHF9A=w855-h641-s-no-gm?authuser=0" data-lightbox="image" data-title="Penzance Station" class="popup_link">Penzance Station</a>
+    <a href="image/map/station/Penzance.JPG" data-lightbox="image" data-title="Penzance Station" class="popup_link">Penzance Station</a>
     <p>
     駅の説明
     </p>

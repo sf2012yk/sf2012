@@ -30,13 +30,13 @@
 //  Basel SBB
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPzf78ucOjCBEnP4_1b0Qi1seVCFdKIEFYECmO4iegHOJkO7EoWVBpwe2ZIm-9AmimODDwcudjNy0OdMP5_G8v7-sgVd7vcUmw3YobPBs-nL7E_pRsmbQQNK0DUbHpiZ2WJF8Xx3WwR3zDJgF8b26K0Eg=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/BaselSBB.JPG" 
        data-lightbox="image" 
        data-title="Basel SBB">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczPzf78ucOjCBEnP4_1b0Qi1seVCFdKIEFYECmO4iegHOJkO7EoWVBpwe2ZIm-9AmimODDwcudjNy0OdMP5_G8v7-sgVd7vcUmw3YobPBs-nL7E_pRsmbQQNK0DUbHpiZ2WJF8Xx3WwR3zDJgF8b26K0Eg=w1216-h913-s-no-gm?authuser=0" alt="Basel SBB Station">
+      <img class="popup_img" loading="eager" src="image/map/station/BaselSBB.JPG" alt="Basel SBB Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPzf78ucOjCBEnP4_1b0Qi1seVCFdKIEFYECmO4iegHOJkO7EoWVBpwe2ZIm-9AmimODDwcudjNy0OdMP5_G8v7-sgVd7vcUmw3YobPBs-nL7E_pRsmbQQNK0DUbHpiZ2WJF8Xx3WwR3zDJgF8b26K0Eg=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Basel SBB Station" class="popup_link">Basel SBB Station</a>
+    <a href="image/map/station/BaselSBB.JPG" data-lightbox="image" data-title="Basel SBB Station" class="popup_link">Basel SBB Station</a>
     <p>
     駅の説明
     </p>
@@ -68,13 +68,13 @@ var markerBaselSBB = L.marker([47.54717812533671, 7.5890015703746885], {
 //  Zurich
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczMqQPp7WFEXUsHH0GxrWJiGEC4nofLF0y8zl4wsd8BamoLzTh3Ccw1gZ0Ae8u0pJ5P6UpfMokH8iEYjh1yMg9lnQGnd4eekp9coNu6hzna8sJzGExeGJaNJodTW8WxnJ08ADzl3JK7tT3KtFc6wIqjH1g=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Zurich.JPG" 
        data-lightbox="image" 
        data-title="Zurich">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczMqQPp7WFEXUsHH0GxrWJiGEC4nofLF0y8zl4wsd8BamoLzTh3Ccw1gZ0Ae8u0pJ5P6UpfMokH8iEYjh1yMg9lnQGnd4eekp9coNu6hzna8sJzGExeGJaNJodTW8WxnJ08ADzl3JK7tT3KtFc6wIqjH1g=w1216-h913-s-no-gm?authuser=0" alt="Zurich Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Zurich.JPG" alt="Zurich Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczMqQPp7WFEXUsHH0GxrWJiGEC4nofLF0y8zl4wsd8BamoLzTh3Ccw1gZ0Ae8u0pJ5P6UpfMokH8iEYjh1yMg9lnQGnd4eekp9coNu6hzna8sJzGExeGJaNJodTW8WxnJ08ADzl3JK7tT3KtFc6wIqjH1g=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Zurich Station" class="popup_link">Zurich Station</a>
+    <a href="image/map/station/Zurich.JPG" data-lightbox="image" data-title="Zurich Station" class="popup_link">Zurich Station</a>
     <p>
     駅の説明
     </p>
@@ -106,13 +106,13 @@ var markerZurich = L.marker([47.37828613669217, 8.539567674375348], {
 //  Olten
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczMgCXpY3BnUDq_v-ynGZ-EfWr4g3bNPx4kL3c7ljIEvGf-l-IuT4R9C3Up62neJ5vh_vrpB-IKd0odcI-xVn1SPYPgQPa7whhkHya6rEXKTg2dS9jvOhVhbcTpV-qFF65Hm5FYeMKkFErZ5_fyPcIvM1Q=w1646-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Olten.JPG" 
        data-lightbox="image" 
        data-title="Olten">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczMgCXpY3BnUDq_v-ynGZ-EfWr4g3bNPx4kL3c7ljIEvGf-l-IuT4R9C3Up62neJ5vh_vrpB-IKd0odcI-xVn1SPYPgQPa7whhkHya6rEXKTg2dS9jvOhVhbcTpV-qFF65Hm5FYeMKkFErZ5_fyPcIvM1Q=w1646-h913-s-no-gm?authuser=0" alt="Olten Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Olten.JPG" alt="Olten Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczMgCXpY3BnUDq_v-ynGZ-EfWr4g3bNPx4kL3c7ljIEvGf-l-IuT4R9C3Up62neJ5vh_vrpB-IKd0odcI-xVn1SPYPgQPa7whhkHya6rEXKTg2dS9jvOhVhbcTpV-qFF65Hm5FYeMKkFErZ5_fyPcIvM1Q=w1646-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Olten Station" class="popup_link">Olten Station</a>
+    <a href="image/map/station/Olten.JPG" data-lightbox="image" data-title="Olten Station" class="popup_link">Olten Station</a>
     <p>
     駅の説明
     </p>
@@ -144,13 +144,13 @@ var markerOlten = L.marker([47.35196790659258, 7.907783649218526], {
 //  Bern
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczO86Uu0Oc48L1frV5W9EhQVVbp1kqlWjKyiX9TnwihenppVapmM4Z4lJF4vaaD67GTnEh-GtSnPQ6dLvNtSKS0NsF2obe7CpQ0MpYusWi5S0wxvs_r8MXUSOm3rjrIIeRqB77cmLrjNntkpHj9pzCS4fA=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Bern.JPG" 
        data-lightbox="image" 
        data-title="Bern">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczO86Uu0Oc48L1frV5W9EhQVVbp1kqlWjKyiX9TnwihenppVapmM4Z4lJF4vaaD67GTnEh-GtSnPQ6dLvNtSKS0NsF2obe7CpQ0MpYusWi5S0wxvs_r8MXUSOm3rjrIIeRqB77cmLrjNntkpHj9pzCS4fA=w1216-h913-s-no-gm?authuser=0" alt="Bern Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Bern.JPG" alt="Bern Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczO86Uu0Oc48L1frV5W9EhQVVbp1kqlWjKyiX9TnwihenppVapmM4Z4lJF4vaaD67GTnEh-GtSnPQ6dLvNtSKS0NsF2obe7CpQ0MpYusWi5S0wxvs_r8MXUSOm3rjrIIeRqB77cmLrjNntkpHj9pzCS4fA=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Bern Station" class="popup_link">Bern Station</a>
+    <a href="image/map/station/Bern.JPG" data-lightbox="image" data-title="Bern Station" class="popup_link">Bern Station</a>
     <p>
     駅の説明
     </p>
@@ -183,13 +183,13 @@ var markerBern = L.marker([46.948380752911675, 7.43530795120567], {
 //  Lausanne
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNkh2lNlPhWbjWInh5RiKAQB20jAgCYrgmQEOor2tjUp-lnB3cbgiGFVdXhl-Jx3vqpCJuRZUR0DhQJgIvmJD74OFvlju8XLgbbOypW8FoKheIc5yOmtU6eZPtjlTRIUSVLNFh3vsMJmB4SuzYuCY63gA=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Lausanne.JPG" 
        data-lightbox="image" 
        data-title="Lausanne">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNkh2lNlPhWbjWInh5RiKAQB20jAgCYrgmQEOor2tjUp-lnB3cbgiGFVdXhl-Jx3vqpCJuRZUR0DhQJgIvmJD74OFvlju8XLgbbOypW8FoKheIc5yOmtU6eZPtjlTRIUSVLNFh3vsMJmB4SuzYuCY63gA=w1216-h913-s-no-gm?authuser=0" alt="Lausanne Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Lausanne.JPG" alt="Lausanne Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNkh2lNlPhWbjWInh5RiKAQB20jAgCYrgmQEOor2tjUp-lnB3cbgiGFVdXhl-Jx3vqpCJuRZUR0DhQJgIvmJD74OFvlju8XLgbbOypW8FoKheIc5yOmtU6eZPtjlTRIUSVLNFh3vsMJmB4SuzYuCY63gA=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Lausanne Station" class="popup_link">Lausanne Station</a>
+    <a href="image/map/station/Lausanne.JPG" data-lightbox="image" data-title="Lausanne Station" class="popup_link">Lausanne Station</a>
     <p>
     駅の説明
     </p>
@@ -222,13 +222,13 @@ var markerLausanne = L.marker([46.51675788314949, 6.6288213303053105], {
 //  Geneva
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPaRZbrO9iQ9QacaiFYZ8viHYi6p6AvIXAeVQ39zc-TuroJSJkEyYNOIsy7x17L0LK25_O8YAWzADJXmNpMCsxTmKPgzYNKNS4Ibd-V20ppq1xlX-9D2RoJvIB81_si_07ZHp2sRP4g9h6U-4VYAd0jZA=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Geneve.JPG" 
        data-lightbox="image" 
        data-title="Geneva">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczPaRZbrO9iQ9QacaiFYZ8viHYi6p6AvIXAeVQ39zc-TuroJSJkEyYNOIsy7x17L0LK25_O8YAWzADJXmNpMCsxTmKPgzYNKNS4Ibd-V20ppq1xlX-9D2RoJvIB81_si_07ZHp2sRP4g9h6U-4VYAd0jZA=w1216-h913-s-no-gm?authuser=0" alt="Geneva Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Geneve.JPG" alt="Geneva Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPaRZbrO9iQ9QacaiFYZ8viHYi6p6AvIXAeVQ39zc-TuroJSJkEyYNOIsy7x17L0LK25_O8YAWzADJXmNpMCsxTmKPgzYNKNS4Ibd-V20ppq1xlX-9D2RoJvIB81_si_07ZHp2sRP4g9h6U-4VYAd0jZA=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Geneva Station" class="popup_link">Geneva Station</a>
+    <a href="image/map/station/Geneve.JPG" data-lightbox="image" data-title="Geneva Station" class="popup_link">Geneva Station</a>
     <p>
     駅の説明
     </p>

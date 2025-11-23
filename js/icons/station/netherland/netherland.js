@@ -29,15 +29,32 @@
 // ES01 Amsterdam Centraal駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPu9G7xWwGwJQP7AAIq93SteLojmMik74lh_tqtGNhLpJLrRre9BPqxiu2HKW11LsHrQK79CFo6BreKgVTtJUS-VJjeQdp6tJAW2BRu7_cGBv7U8caK16jEwe8WrkvOSR4iPefWzBsHiyoWICVSqPUzDg=w855-h641-s-no-gm?authuser=0" 
+    <a href="image/map/station/Amsterdam.JPG" 
        data-lightbox="image" 
-       data-title="Amsterdam Centraal Station">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" alt="Amsterdam Centraal Station">
+       data-title="Brussel">
+      <img class="popup_img" loading="eager" src="image/map/station/Amsterdam.JPG" alt="Brussel Station">
     </a>
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="Amsterdam Centraal Station" class="popup_link">Amsterdam Centraal Station</a>
+    <div class="popup_caption">
+    <a href="image/map/station/Amsterdam.JPG" data-lightbox="image" data-title="Brussel Station" class="popup_link">Antwerp Central Station</a>
+    <p>
+    アムステルダム駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="BrusselToStPancrasCard">
+    <p class="next_text">◀ London（370km）</span>
+    </div>
+    <div class="next_card" id="BrusselToAntwerpCard">
+    <p class="next_text">▲ Antwerp（50km）</span>
+    </div>
+    <div class="next_card" id="BrusselToCologneCard">
+    <p class="next_text">▶ Cologne（230km）</span>
+    </div>
+    </div>
   </div>
 `;
-var marker = L.marker([52.37916601980573, 4.900256248250418], {
+var markerAmsterdam = L.marker([52.37916601980573, 4.900256248250418], {
   icon: stationIcon
 })
   .bindPopup(popupContent, {
@@ -45,5 +62,4 @@ var marker = L.marker([52.37916601980573, 4.900256248250418], {
   autoPan: true,
   keepInView: true,
 })
-  .openPopup()
   .addTo(map);

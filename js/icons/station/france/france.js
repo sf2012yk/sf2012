@@ -29,13 +29,13 @@
 // LGV01 Paris Gare de Lyon駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNegdWWZCvmwvhUIqVMb5mcrt5UsRDCSoeOyaRTJObV1pFibF1SBFPmZ09BaFHoZcMO3BUP9xGCA72oXVHrTph3KNf0PuIOaw3M7cI1YY0WEZUlUp6iFLVJ3svFnHG8LMEWrKHoD9HGtPyS6iYy9qW4yQ=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/ParisLyon.JPG" 
        data-lightbox="image" 
        data-title="ParisLyon">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNegdWWZCvmwvhUIqVMb5mcrt5UsRDCSoeOyaRTJObV1pFibF1SBFPmZ09BaFHoZcMO3BUP9xGCA72oXVHrTph3KNf0PuIOaw3M7cI1YY0WEZUlUp6iFLVJ3svFnHG8LMEWrKHoD9HGtPyS6iYy9qW4yQ=w1216-h913-s-no-gm?authuser=0" alt="Paris Lyon Station">
+      <img class="popup_img" loading="eager" src="image/map/station/ParisLyon.JPG" alt="Paris Lyon Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNegdWWZCvmwvhUIqVMb5mcrt5UsRDCSoeOyaRTJObV1pFibF1SBFPmZ09BaFHoZcMO3BUP9xGCA72oXVHrTph3KNf0PuIOaw3M7cI1YY0WEZUlUp6iFLVJ3svFnHG8LMEWrKHoD9HGtPyS6iYy9qW4yQ=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Paris Lyon Station" class="popup_link">Paris Lyon Station</a>
+    <a href="image/map/station/ParisLyon.JPG" data-lightbox="image" data-title="Paris Lyon Station" class="popup_link">Paris Lyon Station</a>
     <p>
     パリリヨン駅について
     </p>
@@ -69,13 +69,13 @@ var markerParisLyon = L.marker([48.84423772852879, 2.3753086448157688], {
     var popupContent = `
 
     <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPvgzwPZtCYw2Fze0B8CNEGVU4Bjt07W7KYohRyn59Yj5TB5bHSqs_sh6zUN6huzFXwhsg22cuMSF_5pTvFHd8tD38Nl0WubHOez3MiPe2fMYkTTQn4ZAzgQk3YYoKvml5zg3kSHQ4Rq0Whf0M0LcQdcA=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Lyon.JPG" 
        data-lightbox="image" 
        data-title="Lyon Part Dieu">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczPvgzwPZtCYw2Fze0B8CNEGVU4Bjt07W7KYohRyn59Yj5TB5bHSqs_sh6zUN6huzFXwhsg22cuMSF_5pTvFHd8tD38Nl0WubHOez3MiPe2fMYkTTQn4ZAzgQk3YYoKvml5zg3kSHQ4Rq0Whf0M0LcQdcA=w1216-h913-s-no-gm?authuser=0" alt="Lyon Part Dieu Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Lyon.JPG" alt="Lyon Part Dieu Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPvgzwPZtCYw2Fze0B8CNEGVU4Bjt07W7KYohRyn59Yj5TB5bHSqs_sh6zUN6huzFXwhsg22cuMSF_5pTvFHd8tD38Nl0WubHOez3MiPe2fMYkTTQn4ZAzgQk3YYoKvml5zg3kSHQ4Rq0Whf0M0LcQdcA=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Lyon Part Dieu Station" class="popup_link">Lyon Part Dieu Station</a>
+    <a href="image/map/station/Lyon.JPG" data-lightbox="image" data-title="Lyon Part Dieu Station" class="popup_link">Lyon Part Dieu Station</a>
     <p>
     リヨン・パールデュー駅について
     </p>
@@ -108,13 +108,13 @@ var markerPartDieu = L.marker([45.7603030076784, 4.860375801911088], {
 //  Marseille
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczMTW_-P_l6sw82Nvre7Rp-m4hL36LeZOGyVJIDAu5WUk2ySxTkzocUWpdDeWDg2R01Y5nVnLLPqQ8SbpvovM0aYbPBsFa9iPpaNrSQwMNctrMmgaDNwRBw4qT-PAaY0z5hsVjYZ0c242zy6cCfg-jCqaQ=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Marseille.JPG" 
        data-lightbox="image" 
        data-title="Marseille">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczMTW_-P_l6sw82Nvre7Rp-m4hL36LeZOGyVJIDAu5WUk2ySxTkzocUWpdDeWDg2R01Y5nVnLLPqQ8SbpvovM0aYbPBsFa9iPpaNrSQwMNctrMmgaDNwRBw4qT-PAaY0z5hsVjYZ0c242zy6cCfg-jCqaQ=w1216-h913-s-no-gm?authuser=0" alt="Marseille Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Marseille.JPG" alt="Marseille Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczMTW_-P_l6sw82Nvre7Rp-m4hL36LeZOGyVJIDAu5WUk2ySxTkzocUWpdDeWDg2R01Y5nVnLLPqQ8SbpvovM0aYbPBsFa9iPpaNrSQwMNctrMmgaDNwRBw4qT-PAaY0z5hsVjYZ0c242zy6cCfg-jCqaQ=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Marseille Station" class="popup_link">Marseille Station</a>
+    <a href="image/map/station/Marseille.JPG" data-lightbox="image" data-title="Marseille Station" class="popup_link">Marseille Station</a>
     <p>
     駅の説明
     </p>

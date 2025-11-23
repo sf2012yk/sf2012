@@ -66,13 +66,13 @@ var markerAachen = L.marker([50.767679838672564, 6.090875981954147], {
 //  Cologne
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczO6ko3iEVOlOGxcYCfq-EdD8GC831BCd4xsEIHF5NdpLtCZlbixBW22Kf2Lond9VTEF0tub1rpIQb1qOEFeOBwYoBGnBMSv_uPQg7KUCmx-u6FGsBzMrL8jovcdjKOQYNp2m4LEj71Mlzkw1z6Swd0dLA=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Cologne.JPG" 
        data-lightbox="image" 
        data-title="Cologne">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczO6ko3iEVOlOGxcYCfq-EdD8GC831BCd4xsEIHF5NdpLtCZlbixBW22Kf2Lond9VTEF0tub1rpIQb1qOEFeOBwYoBGnBMSv_uPQg7KUCmx-u6FGsBzMrL8jovcdjKOQYNp2m4LEj71Mlzkw1z6Swd0dLA=w1216-h913-s-no-gm?authuser=0" alt="Cologne Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Cologne.JPG" alt="Cologne Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczO6ko3iEVOlOGxcYCfq-EdD8GC831BCd4xsEIHF5NdpLtCZlbixBW22Kf2Lond9VTEF0tub1rpIQb1qOEFeOBwYoBGnBMSv_uPQg7KUCmx-u6FGsBzMrL8jovcdjKOQYNp2m4LEj71Mlzkw1z6Swd0dLA=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Cologne Station" class="popup_link">Cologne Station</a>
+    <a href="image/map/station/Cologne.JPG" data-lightbox="image" data-title="Cologne Station" class="popup_link">Cologne Station</a>
     <p>
     駅の説明
     </p>

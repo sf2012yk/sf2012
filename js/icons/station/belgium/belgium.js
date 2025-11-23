@@ -29,13 +29,13 @@
 //  Brussel
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOJs_K06vHiZJhz3cz-3fq2SATll6isGwLM-7_wPl2JiwuG6RwGMmJw2t4DAGuP6KSo1MuaEbCQ2-yrvdcidErq7I0Gp88Biw_lxf738i4gM_T0KfQeT7XL0eTpRuqVMbZIRSQKYS-bqyGJc2Pew9rz6A=w1130-h848-s-no-gm?authuser=0" 
+    <a href="image/map/station/Brussel.JPG" 
        data-lightbox="image" 
        data-title="Brussel">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczOJs_K06vHiZJhz3cz-3fq2SATll6isGwLM-7_wPl2JiwuG6RwGMmJw2t4DAGuP6KSo1MuaEbCQ2-yrvdcidErq7I0Gp88Biw_lxf738i4gM_T0KfQeT7XL0eTpRuqVMbZIRSQKYS-bqyGJc2Pew9rz6A=w1130-h848-s-no-gm?authuser=0" alt="Brussel Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Brussel.JPG" alt="Brussel Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOJs_K06vHiZJhz3cz-3fq2SATll6isGwLM-7_wPl2JiwuG6RwGMmJw2t4DAGuP6KSo1MuaEbCQ2-yrvdcidErq7I0Gp88Biw_lxf738i4gM_T0KfQeT7XL0eTpRuqVMbZIRSQKYS-bqyGJc2Pew9rz6A=w1130-h848-s-no-gm?authuser=0" data-lightbox="image" data-title="Brussel Station" class="popup_link">Brussel Station</a>
+    <a href="image/map/station/Brussel.JPG" data-lightbox="image" data-title="Brussel Station" class="popup_link">Brussel Station</a>
     <p>
     ブリュッセル駅の説明
     </p>
@@ -68,15 +68,32 @@ var markerBrussel = L.marker([50.83545522369974, 4.334752425478581], {
 // ES01 Antwerp_Central駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPu9G7xWwGwJQP7AAIq93SteLojmMik74lh_tqtGNhLpJLrRre9BPqxiu2HKW11LsHrQK79CFo6BreKgVTtJUS-VJjeQdp6tJAW2BRu7_cGBv7U8caK16jEwe8WrkvOSR4iPefWzBsHiyoWICVSqPUzDg=w855-h641-s-no-gm?authuser=0" 
+    <a href="image/map/station/Brussel.JPG" 
        data-lightbox="image" 
-       data-title="Antwerp Central Station">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" alt="Antwerp Central Station">
+       data-title="Brussel">
+      <img class="popup_img" loading="eager" src="image/map/station/Brussel.JPG" alt="Brussel Station">
     </a>
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="Brussels Midi Station" class="popup_link">Antwerp Central Station</a>
+    <div class="popup_caption">
+    <a href="image/map/station/Brussel.JPG" data-lightbox="image" data-title="Brussel Station" class="popup_link">Antwerp Central Station</a>
+    <p>
+    アントワープ駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="BrusselToStPancrasCard">
+    <p class="next_text">◀ London（370km）</span>
+    </div>
+    <div class="next_card" id="BrusselToAntwerpCard">
+    <p class="next_text">▲ Antwerp（50km）</span>
+    </div>
+    <div class="next_card" id="BrusselToCologneCard">
+    <p class="next_text">▶ Cologne（230km）</span>
+    </div>
+    </div>
   </div>
 `;
-var marker = L.marker([51.216646870247864, 4.42102673560588], {
+var markerAntwerp= L.marker([51.216646870247864, 4.42102673560588], {
   icon: stationIcon
 })
   .bindPopup(popupContent, {
@@ -84,18 +101,34 @@ var marker = L.marker([51.216646870247864, 4.42102673560588], {
   autoPan: true,
   keepInView: true,
 })
-  .openPopup()
   .addTo(map);
 
 // DB01 Liège_Guillemins駅：
     var popupContent = `
-     <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczPu9G7xWwGwJQP7AAIq93SteLojmMik74lh_tqtGNhLpJLrRre9BPqxiu2HKW11LsHrQK79CFo6BreKgVTtJUS-VJjeQdp6tJAW2BRu7_cGBv7U8caK16jEwe8WrkvOSR4iPefWzBsHiyoWICVSqPUzDg=w855-h641-s-no-gm?authuser=0" 
+    <div class="popup_summer">
+    <a href="image/map/station/Brussel.JPG" 
        data-lightbox="image" 
-       data-title="Liège Guillemins Station">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" alt="Liège Guillemins Station">
+       data-title="Brussel">
+      <img class="popup_img" loading="eager" src="image/map/station/Brussel.JPG" alt="Brussel Station">
     </a>
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="Liège Guillemins Station" class="popup_link">Liège Guillemins Station</a>
+    <div class="popup_caption">
+    <a href="image/map/station/Brussel.JPG" data-lightbox="image" data-title="Brussel Station" class="popup_link">Liège Guillemins Station</a>
+    <p>
+    リエージュ駅の説明
+    </p>
+    </div>
+    <a onclick="toggleSection('nextVisitSection')" class="popup_link">▼ Next Station</a>
+    <div id="nextVisitSection" class="popup_section">
+    <div class="next_card" id="BrusselToStPancrasCard">
+    <p class="next_text">◀ London（370km）</span>
+    </div>
+    <div class="next_card" id="BrusselToAntwerpCard">
+    <p class="next_text">▲ Antwerp（50km）</span>
+    </div>
+    <div class="next_card" id="BrusselToCologneCard">
+    <p class="next_text">▶ Cologne（230km）</span>
+    </div>
+    </div>
   </div>
 `;
 var marker = L.marker([50.62382366427076, 5.567168022242202], {

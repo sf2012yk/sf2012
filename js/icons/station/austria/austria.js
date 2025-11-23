@@ -61,13 +61,13 @@ var markerFlughafenWien = L.marker([48.120983101278604, 16.563218852576007], {
 //  Vienna
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNOiA89ZAmPaHsN3Vz_cVzuLNqOQZulvW-NHMf06XIgyx4b0yq9FO_C1M2Tb6HJVqhAtlSS7j407bN_x8_kGEGzu50dpXLLmA-hxu3V-3FLgvyQOQcxvBX8444mPz4DDthPbI73iCFvXYZ7gAlr9PxQRA=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Vienna.JPG" 
        data-lightbox="image" 
        data-title="Vienna">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNOiA89ZAmPaHsN3Vz_cVzuLNqOQZulvW-NHMf06XIgyx4b0yq9FO_C1M2Tb6HJVqhAtlSS7j407bN_x8_kGEGzu50dpXLLmA-hxu3V-3FLgvyQOQcxvBX8444mPz4DDthPbI73iCFvXYZ7gAlr9PxQRA=w1216-h913-s-no-gm?authuser=0" alt="Vienna Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Vienna.JPG" alt="Vienna Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNOiA89ZAmPaHsN3Vz_cVzuLNqOQZulvW-NHMf06XIgyx4b0yq9FO_C1M2Tb6HJVqhAtlSS7j407bN_x8_kGEGzu50dpXLLmA-hxu3V-3FLgvyQOQcxvBX8444mPz4DDthPbI73iCFvXYZ7gAlr9PxQRA=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Vienna Station" class="popup_link">Vienna Station</a>
+    <a href="image/map/station/Vienna.JPG" data-lightbox="image" data-title="Vienna Station" class="popup_link">Vienna Station</a>
     <p>
     駅の説明
     </p>
@@ -100,13 +100,13 @@ var markerViennaCentral = L.marker([48.18500525586605, 16.377671700808875], {
 //  Salzburg
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOxhYFtu2jaQO72CU8YpXFPfkArBbvVTkrp2FDc01IgLFZcMfJneNS1eLf4lqCBrGe9M5PPl1HZ_BwXk39tzQuvTjcwauomDE3_8qqoxjYtSDWr9iGKP0uHOlZ2roLbaBSQxTgv1W7Tz_e7j2hr1Q8KzA=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Salzburg.JPG" 
        data-lightbox="image" 
        data-title="Salzburg">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczOxhYFtu2jaQO72CU8YpXFPfkArBbvVTkrp2FDc01IgLFZcMfJneNS1eLf4lqCBrGe9M5PPl1HZ_BwXk39tzQuvTjcwauomDE3_8qqoxjYtSDWr9iGKP0uHOlZ2roLbaBSQxTgv1W7Tz_e7j2hr1Q8KzA=w1216-h913-s-no-gm?authuser=0" alt="Salzburg Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Salzburg.JPG" alt="Salzburg Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOxhYFtu2jaQO72CU8YpXFPfkArBbvVTkrp2FDc01IgLFZcMfJneNS1eLf4lqCBrGe9M5PPl1HZ_BwXk39tzQuvTjcwauomDE3_8qqoxjYtSDWr9iGKP0uHOlZ2roLbaBSQxTgv1W7Tz_e7j2hr1Q8KzA=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Salzburg Station" class="popup_link">Salzburg Station</a>
+    <a href="image/map/station/Salzburg.JPG" data-lightbox="image" data-title="Salzburg Station" class="popup_link">Salzburg Station</a>
     <p>
     駅の説明
     </p>
@@ -136,13 +136,13 @@ var markerSalzburg = L.marker([47.812680660648525, 13.045783626953863], {
 //  Innsbruck
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczMMmJc8jm03s2Gy9O94v_gQukIwHXtSHIJlFRAU_xMOSGtqPAAhGcDUY2VhuUB3wKvJqRgPFkO3eqa2xgAmm0m1zIWsTdOl-IQIBFGKpQRp4d3ZOnNZ8vyPGEtCS0QXjXOXxUFGUYxnit1byzYewJgPew=w1216-h913-s-no-gm?authuser=0" 
+    <a href="image/map/station/Innsbruck.JPG" 
        data-lightbox="image" 
        data-title="Innsbruck">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczMMmJc8jm03s2Gy9O94v_gQukIwHXtSHIJlFRAU_xMOSGtqPAAhGcDUY2VhuUB3wKvJqRgPFkO3eqa2xgAmm0m1zIWsTdOl-IQIBFGKpQRp4d3ZOnNZ8vyPGEtCS0QXjXOXxUFGUYxnit1byzYewJgPew=w1216-h913-s-no-gm?authuser=0" alt="Innsbruck Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Innsbruck.JPG" alt="Innsbruck Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczMMmJc8jm03s2Gy9O94v_gQukIwHXtSHIJlFRAU_xMOSGtqPAAhGcDUY2VhuUB3wKvJqRgPFkO3eqa2xgAmm0m1zIWsTdOl-IQIBFGKpQRp4d3ZOnNZ8vyPGEtCS0QXjXOXxUFGUYxnit1byzYewJgPew=w1216-h913-s-no-gm?authuser=0" data-lightbox="image" data-title="Innsbruck Station" class="popup_link">Innsbruck Station</a>
+    <a href="image/map/station/Innsbruck.JPG" data-lightbox="image" data-title="Innsbruck Station" class="popup_link">Innsbruck Station</a>
     <p>
     駅の説明
     </p>

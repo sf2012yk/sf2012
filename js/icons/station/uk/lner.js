@@ -30,13 +30,13 @@
 //  King's Cross
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" 
+    <a href="image/map/station/KingsCross.JPG" 
        data-lightbox="image" 
        data-title="King's Cross">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" alt="King's Cross Station">
+      <img class="popup_img" loading="eager" src="image/map/station/KingsCross.JPG" alt="King's Cross Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNVVu6ElKzZBWCWo2pX-A7OARGxpvLK35_uSIjXnBrwT_uSfs82CEZpB3PngZUKV9AsNRLhqgswO9IH7eFu12BX8c9OBZg6vKFPeDjExbOrXL-S7M_T_YcytSEQm3-n2Y1JekHV_1ic6XWjmQksPCCe=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="King's Cross Station" class="popup_link">King's Cross Station</a>
+    <a href="image/map/station/KingsCross.JPG" data-lightbox="image" data-title="King's Cross Station" class="popup_link">King's Cross Station</a>
     <p>
     King's Cross駅の説明
     </p>
@@ -105,13 +105,13 @@ var markerPeterborough = L.marker([52.57388879556104, -0.24981606095851133], {
   //  York
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczN8cbokzvb8xF1O-S8_SGCG7agzYkEZTn4OdXk7FvfQF4azN4eM0vmsctPhBa4ggbXCCneKSX2YCn__ZTwr2T9gMdTp5SJe7kCS8q3M_hSJiNigEz_tImHEMdQ0YIDcpKxXNVj8JMyVe3HDaenQmPYywA=w1130-h848-s-no-gm?authuser=0" 
+    <a href="image/map/station/York.JPG" 
        data-lightbox="image" 
        data-title="York">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczN8cbokzvb8xF1O-S8_SGCG7agzYkEZTn4OdXk7FvfQF4azN4eM0vmsctPhBa4ggbXCCneKSX2YCn__ZTwr2T9gMdTp5SJe7kCS8q3M_hSJiNigEz_tImHEMdQ0YIDcpKxXNVj8JMyVe3HDaenQmPYywA=w1130-h848-s-no-gm?authuser=0" alt="York Station">
+      <img class="popup_img" loading="eager" src="image/map/station/York.JPG" alt="York Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczN8cbokzvb8xF1O-S8_SGCG7agzYkEZTn4OdXk7FvfQF4azN4eM0vmsctPhBa4ggbXCCneKSX2YCn__ZTwr2T9gMdTp5SJe7kCS8q3M_hSJiNigEz_tImHEMdQ0YIDcpKxXNVj8JMyVe3HDaenQmPYywA=w1130-h848-s-no-gm?authuser=0" data-lightbox="image" data-title="York Station" class="popup_link">York Station</a>
+    <a href="image/map/station/York.JPG" data-lightbox="image" data-title="York Station" class="popup_link">York Station</a>
     <p>
     UK中央部、ヨークシャー地方の代表駅。
     </p>
@@ -146,13 +146,13 @@ var markerYork = L.marker([53.95668456824942, -1.0946599488952553], {
 //  Darlington
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczN1ckVVB_OsVNCRiyG_6LCiWcOiFNuZ9keNkxfrMPADiP3snLJdGDbhYLzB9XUvRn1eIspkwSHyctdIV4K6KWILf8a8bc-j6Pkl0nn4tgEnlQC0nj5J8QG3j0reYyoFXivgD0rZ-VcpqrLFU4rQToqrug=w1130-h848-s-no-gm?authuser=0" 
+    <a href="image/map/station/Darlington.JPG" 
        data-lightbox="image" 
        data-title="Darlington">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczN1ckVVB_OsVNCRiyG_6LCiWcOiFNuZ9keNkxfrMPADiP3snLJdGDbhYLzB9XUvRn1eIspkwSHyctdIV4K6KWILf8a8bc-j6Pkl0nn4tgEnlQC0nj5J8QG3j0reYyoFXivgD0rZ-VcpqrLFU4rQToqrug=w1130-h848-s-no-gm?authuser=0" alt="Darlington Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Darlington.JPG" alt="Darlington Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczN1ckVVB_OsVNCRiyG_6LCiWcOiFNuZ9keNkxfrMPADiP3snLJdGDbhYLzB9XUvRn1eIspkwSHyctdIV4K6KWILf8a8bc-j6Pkl0nn4tgEnlQC0nj5J8QG3j0reYyoFXivgD0rZ-VcpqrLFU4rQToqrug=w1130-h848-s-no-gm?authuser=0" data-lightbox="image" data-title="Darlington Station" class="popup_link">Darlington Station</a>
+    <a href="image/map/station/Darlington.JPG" data-lightbox="image" data-title="Darlington Station" class="popup_link">Darlington Station</a>
     <p>
     駅の説明
     </p>
@@ -185,13 +185,13 @@ var markerDarlington = L.marker([54.521126434342825, -1.5460040570133933], {
 //  Durham
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOajxgDRKqSUulJfzvzfXHzyqScvKocKvOyFSZ3B8ln_rkzTDaKiJfFC-_eOKpOrez9cwW4nzfRl98I7Hx4cz5Zeu7eSMbwYM5GZRk4WGMet63OCz3qD4tKlZ_3I-saEF3HF5c-sNX-f-zvQPTA1y7KOw=w1159-h869-s-no-gm?authuser=0" 
+    <a href="image/map/station/Durham.JPG" 
        data-lightbox="image" 
        data-title="Durham">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczOajxgDRKqSUulJfzvzfXHzyqScvKocKvOyFSZ3B8ln_rkzTDaKiJfFC-_eOKpOrez9cwW4nzfRl98I7Hx4cz5Zeu7eSMbwYM5GZRk4WGMet63OCz3qD4tKlZ_3I-saEF3HF5c-sNX-f-zvQPTA1y7KOw=w1159-h869-s-no-gm?authuser=0" alt="Durham Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Durham.JPG" alt="Durham Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOajxgDRKqSUulJfzvzfXHzyqScvKocKvOyFSZ3B8ln_rkzTDaKiJfFC-_eOKpOrez9cwW4nzfRl98I7Hx4cz5Zeu7eSMbwYM5GZRk4WGMet63OCz3qD4tKlZ_3I-saEF3HF5c-sNX-f-zvQPTA1y7KOw=w1159-h869-s-no-gm?authuser=0" data-lightbox="image" data-title="Durham Station" class="popup_link">Durham Station</a>
+    <a href="image/map/station/Durham.JPG" data-lightbox="image" data-title="Durham Station" class="popup_link">Durham Station</a>
     <p>
     駅の説明
     </p>
@@ -223,13 +223,13 @@ var markerDurham = L.marker([54.77983780775699, -1.5814880478633844], {
 //  Newcastle
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOp9GDLuCEosYmTwrtwoyvK_tPCxyZ4UDf7hLGn3WwW-vMXxJPqAd7GT81W3aFwjPtnJYpSEP2fzXKwW-bfJnf0aZ1JgZz51qudQiJFK0giE-PDcD5rH1m7HI6oPAMxB9848ycc0BTX6hkOGoGEs2BKvQ=w1130-h848-s-no-gm?authuser=0" 
+    <a href="image/map/station/Newcastle.JPG" 
        data-lightbox="image" 
        data-title="Newcastle">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczOp9GDLuCEosYmTwrtwoyvK_tPCxyZ4UDf7hLGn3WwW-vMXxJPqAd7GT81W3aFwjPtnJYpSEP2fzXKwW-bfJnf0aZ1JgZz51qudQiJFK0giE-PDcD5rH1m7HI6oPAMxB9848ycc0BTX6hkOGoGEs2BKvQ=w1130-h848-s-no-gm?authuser=0" alt="Newcastle Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Newcastle.JPG" alt="Newcastle Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczOp9GDLuCEosYmTwrtwoyvK_tPCxyZ4UDf7hLGn3WwW-vMXxJPqAd7GT81W3aFwjPtnJYpSEP2fzXKwW-bfJnf0aZ1JgZz51qudQiJFK0giE-PDcD5rH1m7HI6oPAMxB9848ycc0BTX6hkOGoGEs2BKvQ=w1130-h848-s-no-gm?authuser=0" data-lightbox="image" data-title="Newcastle Station" class="popup_link">Newcastle Station</a>
+    <a href="image/map/station/Newcastle.JPG" data-lightbox="image" data-title="Newcastle Station" class="popup_link">Newcastle Station</a>
     <p>
     駅の説明
     </p>
@@ -265,13 +265,13 @@ var markerNewcastle = L.marker([54.96814759160355, -1.6176357599706133], {
   //  Edinburgh
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczN0-sCChTlDJS6dHVylTwWZfMP8ZZOhi-Oyp26LEQ0_xnErF_uXW7CoIIwFYjKkk7YLzqGI45UmOeXmcEilHiaUdnYo64MMmSFFFRo3HQZpC1nCFj01RhZA-YBtNMcerj0_W9kWzWWCyv5t87vEi0Jksw=w1130-h848-s-no-gm?authuser=0" 
+    <a href="image/map/station/Edinburgh.JPG" 
        data-lightbox="image" 
        data-title="Edinburgh">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczN0-sCChTlDJS6dHVylTwWZfMP8ZZOhi-Oyp26LEQ0_xnErF_uXW7CoIIwFYjKkk7YLzqGI45UmOeXmcEilHiaUdnYo64MMmSFFFRo3HQZpC1nCFj01RhZA-YBtNMcerj0_W9kWzWWCyv5t87vEi0Jksw=w1130-h848-s-no-gm?authuser=0" alt="Edinburgh Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Edinburgh.JPG" alt="Edinburgh Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczN0-sCChTlDJS6dHVylTwWZfMP8ZZOhi-Oyp26LEQ0_xnErF_uXW7CoIIwFYjKkk7YLzqGI45UmOeXmcEilHiaUdnYo64MMmSFFFRo3HQZpC1nCFj01RhZA-YBtNMcerj0_W9kWzWWCyv5t87vEi0Jksw=w1130-h848-s-no-gm?authuser=0" data-lightbox="image" data-title="Edinburgh Station" class="popup_link">Edinburgh Station</a>
+    <a href="image/map/station/Edinburgh.JPG" data-lightbox="image" data-title="Edinburgh Station" class="popup_link">Edinburgh Station</a>
     <p>
     駅の説明
     </p>

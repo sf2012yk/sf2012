@@ -29,13 +29,13 @@
 //  St Pancras
     var popupContent = `
       <div class="popup_summer">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNGHVsVqu8FiqfJjnj_pS671yDd0YSvZGfkmfNy6y6bC5Jywx9gAI-w85q3FEo0iEhX5yCVjvOq09aPMtau9rolJ5CERTZH14QtjbK_b8cqz58dZRrV4Y-HsOXeDpzgpKKgotgZxT__Q70KL1OvZWaJuQ=w1130-h848-s-no-gm?authuser=0" 
+    <a href="image/map/station/StPancrass.JPG" 
        data-lightbox="image" 
        data-title="St Pancras">
-      <img class="popup_img" loading="eager" src="https://lh3.googleusercontent.com/pw/AP1GczNGHVsVqu8FiqfJjnj_pS671yDd0YSvZGfkmfNy6y6bC5Jywx9gAI-w85q3FEo0iEhX5yCVjvOq09aPMtau9rolJ5CERTZH14QtjbK_b8cqz58dZRrV4Y-HsOXeDpzgpKKgotgZxT__Q70KL1OvZWaJuQ=w1130-h848-s-no-gm?authuser=0" alt="St Pancras Station">
+      <img class="popup_img" loading="eager" src="image/map/station/StPancrass.JPG" alt="St Pancras Station">
     </a>
     <div class="popup_caption">
-    <a href="https://lh3.googleusercontent.com/pw/AP1GczNGHVsVqu8FiqfJjnj_pS671yDd0YSvZGfkmfNy6y6bC5Jywx9gAI-w85q3FEo0iEhX5yCVjvOq09aPMtau9rolJ5CERTZH14QtjbK_b8cqz58dZRrV4Y-HsOXeDpzgpKKgotgZxT__Q70KL1OvZWaJuQ=w1130-h848-s-no-gm?authuser=0" data-lightbox="image" data-title="St Pancras Station" class="popup_link">St Pancras Station</a>
+    <a href="image/map/station/StPancrass.JPG" data-lightbox="image" data-title="St Pancras Station" class="popup_link">St Pancras Station</a>
     <p>
     駅の説明
     </p>
