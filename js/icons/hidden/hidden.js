@@ -63,7 +63,7 @@ var marker = L.marker([46.494551269807005, 6.727661990211627], {
 //澄み渡った山頂でハイ、チーズ！
     var popupContent = `
     <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="image/hidden/Hidden_8.jpg" alt="場所名">
+      <img class="popup_img" loading="eager" src="image/hidden/Hidden_8.JPG" alt="場所名">
     <a href="Hidden.html" class="popup_link">澄み渡った山頂でハイ、チーズ！</a>
     <div class="popup_caption">
     <p>

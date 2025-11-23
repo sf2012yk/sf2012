@@ -94,13 +94,13 @@ var markerHeathrowTerminal5 = L.marker([51.47259800120853, -0.4859364875464297],
 //  Geneva
     var popupContent = `
       <div class="popup_summer">
-    <a href="image/map/airport/Geneve.JPG" 
+    <a href="image/map/airport/Geneve.jpg" 
        data-lightbox="image" 
        data-title="Geneva">
-      <img class="popup_img" loading="eager" src="image/map/airport/Geneve.JPG" alt="Geneva Airport">
+      <img class="popup_img" loading="eager" src="image/map/airport/Geneve.jpg" alt="Geneva Airport">
     </a>
     <div class="popup_caption">
-    <a href="image/map/airport/Geneve.JPG" data-lightbox="image" data-title="Geneva Airport" class="popup_link">Geneva Airport</a>
+    <a href="image/map/airport/Geneve.jpg" data-lightbox="image" data-title="Geneva Airport" class="popup_link">Geneva Airport</a>
     <p>
     Genevaの説明
     </p>

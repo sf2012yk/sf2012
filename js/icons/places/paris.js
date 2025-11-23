@@ -28,7 +28,7 @@
 //2. ルーヴル美術館：
     var popupContent = `
    <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="image/map/place/Paris/MuseeduLouvre.JPG" alt="London">
+      <img class="popup_img" loading="eager" src="image/map/place/Paris/MuseeduLouvre.jpg" alt="London">
     <a href="" class="popup_link">Musée du Louvre</a>
     <div class="popup_caption">
     <p>
@@ -51,7 +51,7 @@ var marker = L.marker([48.86073376214778, 2.3368960594008947], {
 //3. オルセー美術館：
     var popupContent = `
   <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="image/map/place/Paris/MuseedOrsay.JPG" alt="London">
+      <img class="popup_img" loading="eager" src="image/map/place/Paris/MuseedOrsay.jpg" alt="London">
     <a href="" class="popup_link">Musée d'Orsay</a>
     <div class="popup_caption">
     <p>

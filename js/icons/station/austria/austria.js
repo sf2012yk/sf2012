@@ -61,13 +61,13 @@ var markerFlughafenWien = L.marker([48.120983101278604, 16.563218852576007], {
 //  Vienna
     var popupContent = `
       <div class="popup_summer">
-    <a href="image/map/station/Vienna.JPG" 
+    <a href="image/map/station/Vienna.jpg" 
        data-lightbox="image" 
        data-title="Vienna">
-      <img class="popup_img" loading="eager" src="image/map/station/Vienna.JPG" alt="Vienna Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Vienna.jpg" alt="Vienna Station">
     </a>
     <div class="popup_caption">
-    <a href="image/map/station/Vienna.JPG" data-lightbox="image" data-title="Vienna Station" class="popup_link">Vienna Station</a>
+    <a href="image/map/station/Vienna.jpg" data-lightbox="image" data-title="Vienna Station" class="popup_link">Vienna Station</a>
     <p>
     駅の説明
     </p>

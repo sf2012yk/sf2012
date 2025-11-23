@@ -29,13 +29,13 @@
 // LGV01 Paris Gare de Lyon駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="image/map/station/ParisLyon.JPG" 
+    <a href="image/map/station/ParisLyon.jpg" 
        data-lightbox="image" 
        data-title="ParisLyon">
-      <img class="popup_img" loading="eager" src="image/map/station/ParisLyon.JPG" alt="Paris Lyon Station">
+      <img class="popup_img" loading="eager" src="image/map/station/ParisLyon.jpg" alt="Paris Lyon Station">
     </a>
     <div class="popup_caption">
-    <a href="image/map/station/ParisLyon.JPG" data-lightbox="image" data-title="Paris Lyon Station" class="popup_link">Paris Lyon Station</a>
+    <a href="image/map/station/ParisLyon.jpg" data-lightbox="image" data-title="Paris Lyon Station" class="popup_link">Paris Lyon Station</a>
     <p>
     パリリヨン駅について
     </p>
@@ -69,13 +69,13 @@ var markerParisLyon = L.marker([48.84423772852879, 2.3753086448157688], {
     var popupContent = `
 
     <div class="popup_summer">
-    <a href="image/map/station/Lyon.JPG" 
+    <a href="image/map/station/Lyon.jpg" 
        data-lightbox="image" 
        data-title="Lyon Part Dieu">
-      <img class="popup_img" loading="eager" src="image/map/station/Lyon.JPG" alt="Lyon Part Dieu Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Lyon.jpg" alt="Lyon Part Dieu Station">
     </a>
     <div class="popup_caption">
-    <a href="image/map/station/Lyon.JPG" data-lightbox="image" data-title="Lyon Part Dieu Station" class="popup_link">Lyon Part Dieu Station</a>
+    <a href="image/map/station/LyonPartDieu.jpg" data-lightbox="image" data-title="Lyon Part Dieu Station" class="popup_link">Lyon Part Dieu Station</a>
     <p>
     リヨン・パールデュー駅について
     </p>

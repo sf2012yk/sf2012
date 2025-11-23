@@ -29,13 +29,13 @@
 // GW_01 Paddington駅：
     var popupContent = `
      <div class="popup_summer">
-    <a href="image/map/station/Paddington.JPG" 
+    <a href="image/map/station/Paddington.jpg" 
        data-lightbox="image" 
        data-title="Paddington">
-      <img class="popup_img" loading="eager" src="image/map/station/Paddington.JPG" alt="Paddington Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Paddington.jpg" alt="Paddington Station">
     </a>
     <div class="popup_caption">
-    <a href="image/map/station/Paddington.JPG" data-lightbox="image" data-title="Paddington Station" class="popup_link">Paddington Station</a>
+    <a href="image/map/station/Paddington.jpg" data-lightbox="image" data-title="Paddington Station" class="popup_link">Paddington Station</a>
     <p>
     ヴィクトリア様式の美しい駅舎を持つ、ロンドン西部のターミナル駅。映画『パディントン』の舞台として知られている。
     </p>

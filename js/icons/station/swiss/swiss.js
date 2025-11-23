@@ -30,13 +30,13 @@
 //  Basel SBB
     var popupContent = `
       <div class="popup_summer">
-    <a href="image/map/station/BaselSBB.JPG" 
+    <a href="image/map/station/BaselSBB.jpg" 
        data-lightbox="image" 
        data-title="Basel SBB">
-      <img class="popup_img" loading="eager" src="image/map/station/BaselSBB.JPG" alt="Basel SBB Station">
+      <img class="popup_img" loading="eager" src="image/map/station/BaselSBB.jpg" alt="Basel SBB Station">
     </a>
     <div class="popup_caption">
-    <a href="image/map/station/BaselSBB.JPG" data-lightbox="image" data-title="Basel SBB Station" class="popup_link">Basel SBB Station</a>
+    <a href="image/map/station/BaselSBB.jpg" data-lightbox="image" data-title="Basel SBB Station" class="popup_link">Basel SBB Station</a>
     <p>
     駅の説明
     </p>
@@ -106,13 +106,13 @@ var markerZurich = L.marker([47.37828613669217, 8.539567674375348], {
 //  Olten
     var popupContent = `
       <div class="popup_summer">
-    <a href="image/map/station/Olten.JPG" 
+    <a href="image/map/station/Olten.jpg" 
        data-lightbox="image" 
        data-title="Olten">
-      <img class="popup_img" loading="eager" src="image/map/station/Olten.JPG" alt="Olten Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Olten.jpg" alt="Olten Station">
     </a>
     <div class="popup_caption">
-    <a href="image/map/station/Olten.JPG" data-lightbox="image" data-title="Olten Station" class="popup_link">Olten Station</a>
+    <a href="image/map/station/Olten.jpg" data-lightbox="image" data-title="Olten Station" class="popup_link">Olten Station</a>
     <p>
     駅の説明
     </p>
@@ -183,13 +183,13 @@ var markerBern = L.marker([46.948380752911675, 7.43530795120567], {
 //  Lausanne
     var popupContent = `
       <div class="popup_summer">
-    <a href="image/map/station/Lausanne.JPG" 
+    <a href="image/map/station/Lausanne.jpg" 
        data-lightbox="image" 
        data-title="Lausanne">
-      <img class="popup_img" loading="eager" src="image/map/station/Lausanne.JPG" alt="Lausanne Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Lausanne.jpg" alt="Lausanne Station">
     </a>
     <div class="popup_caption">
-    <a href="image/map/station/Lausanne.JPG" data-lightbox="image" data-title="Lausanne Station" class="popup_link">Lausanne Station</a>
+    <a href="image/map/station/Lausanne.jpg" data-lightbox="image" data-title="Lausanne Station" class="popup_link">Lausanne Station</a>
     <p>
     駅の説明
     </p>
@@ -222,13 +222,13 @@ var markerLausanne = L.marker([46.51675788314949, 6.6288213303053105], {
 //  Geneva
     var popupContent = `
       <div class="popup_summer">
-    <a href="image/map/station/Geneve.JPG" 
+    <a href="image/map/station/Geneve.jpg" 
        data-lightbox="image" 
        data-title="Geneva">
-      <img class="popup_img" loading="eager" src="image/map/station/Geneve.JPG" alt="Geneva Station">
+      <img class="popup_img" loading="eager" src="image/map/station/Geneve.jpg" alt="Geneva Station">
     </a>
     <div class="popup_caption">
-    <a href="image/map/station/Geneve.JPG" data-lightbox="image" data-title="Geneva Station" class="popup_link">Geneva Station</a>
+    <a href="image/map/station/Geneve.jpg" data-lightbox="image" data-title="Geneva Station" class="popup_link">Geneva Station</a>
     <p>
     駅の説明
     </p>
