@@ -98,7 +98,7 @@ var marker = L.marker([48.86839189844828, 2.311803413640931], {
 //5. サンシャペル教会：
     var popupContent = `
   <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="image/map/place/Paris/Saintechapelle.JPG" alt="London">
+      <img class="popup_img" loading="eager" src="image/map/place/Paris/Saintechapelle.jpg" alt="London">
     <a href="" class="popup_link">Sainte chapelle</a>
     <div class="popup_caption">
     <p>
@@ -121,7 +121,7 @@ var marker = L.marker([48.855496246891526, 2.3444696106274336], {
 //6. ノートルダム大聖堂：
     var popupContent = `
   <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="image/map/place/Paris/NotreDame.JPG" alt="London">
+      <img class="popup_img" loading="eager" src="image/map/place/Paris/NotreDame.jpg" alt="London">
     <a href="" class="popup_link">Notre Dame</a>
     <div class="popup_caption">
     <p>
@@ -143,7 +143,7 @@ var marker = L.marker([48.85314552856817, 2.34942260162728], {
 //7. ラ・フランス・ルネサンス：
     var popupContent = `
   <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="image/map/place/Paris/LaFranceRenaissante.JPG" alt="London">
+      <img class="popup_img" loading="eager" src="image/map/place/Paris/LaFranceRenaissante.jpg" alt="London">
     <a href="Paris.html" class="popup_link">La France Renaissante</a>
     <div class="popup_caption">
     <p>
@@ -165,7 +165,7 @@ var marker = L.marker([48.85575045929262, 2.2878532272863383], {
 //8. ウィンストン・チャーチル像：
     var popupContent = `
    <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="image/map/place/Paris/WinstonChurchill.JPG" alt="London">
+      <img class="popup_img" loading="eager" src="image/map/place/Paris/WinstonChurchill.jpg" alt="London">
     <a href="Paris.html" class="popup_link">Winston Churchill</a>
     <div class="popup_caption">
     <p>
@@ -188,7 +188,7 @@ var marker = L.marker([48.86532309516195, 2.313994628998788], {
 //8. ルクセンブルク公園：
     var popupContent = `
   <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="image/map/place/Paris/LuxemburgPark.JPG" alt="London">
+      <img class="popup_img" loading="eager" src="image/map/place/Paris/LuxemburgPark.jpg" alt="London">
     <a href="Paris.html" class="popup_link">Luxemburg Park</a>
     <div class="popup_caption">
     <p>
