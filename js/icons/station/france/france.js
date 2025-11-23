@@ -69,10 +69,10 @@ var markerParisLyon = L.marker([48.84423772852879, 2.3753086448157688], {
     var popupContent = `
 
     <div class="popup_summer">
-    <a href="image/map/station/Lyon.jpg" 
+    <a href="image/map/station/LyonPartDieu.jpg" 
        data-lightbox="image" 
        data-title="Lyon Part Dieu">
-      <img class="popup_img" loading="eager" src="image/map/station/Lyon.jpg" alt="Lyon Part Dieu Station">
+      <img class="popup_img" loading="eager" src="image/map/station/LyonPartDieu.jpg" alt="Lyon Part Dieu Station">
     </a>
     <div class="popup_caption">
     <a href="image/map/station/LyonPartDieu.jpg" data-lightbox="image" data-title="Lyon Part Dieu Station" class="popup_link">Lyon Part Dieu Station</a>
