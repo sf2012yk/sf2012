@@ -28,7 +28,7 @@
 //3. ビッグベン：
     var popupContent = `
      <div class="popup_summer">
-      <img class="popup_img" loading="eager" src="image/map/place/London/BigBen.JPG" alt="London">
+      <img class="popup_img" loading="eager" src="image/map/place/London/BigBen.jpg" alt="London">
     <a href="" class="popup_link">Big Ben</a>
     <div class="popup_caption">
     <p style="margin-bottom: 1em!important;">
